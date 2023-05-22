@@ -7,6 +7,7 @@ url: "http://crnlcu.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  crnlcu
 linkedin_username:  Lucia Coronel
+google_username:  Lucia Coronel
 
 # Build settings
 markdown: kramdown
