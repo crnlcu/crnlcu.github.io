@@ -1,11 +1,12 @@
 # Site settings
 title: Lucia Coronel
-email: coronlucia@gmail.com
+email: coronelucia@gmail.com
 description:  I'm a biophysicist
 #baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://crnlcu.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  crnlcu
+linkedin_username:  Lucia Coronel
 
 # Build settings
 markdown: kramdown
