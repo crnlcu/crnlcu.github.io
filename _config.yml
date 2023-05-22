@@ -2,7 +2,7 @@
 title: Lucia Coronel
 email: coronlucia@gmail.com
 description:  I'm a biophysicist
-#baseurl: "/crnlcu.github.io" # the subpath of your site, e.g. /blog/
+baseurl: "crnlcu.github.io" # the subpath of your site, e.g. /blog/
 url: "http://crnlcu.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  crnlcu
