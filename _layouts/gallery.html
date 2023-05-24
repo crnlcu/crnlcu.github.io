@@ -57,6 +57,19 @@ body {
 }
 </style>
 </head>
+  {% include /head.html %}
+    <body>
+        <div id="wrapper">
+        {% include /header.html %}
+
+            <!-- Main -->
+            <div id="main">
+                {{ content }}
+
+            </div>
+            {% include /footer.html %}
+		</div>
+	
   <!-- Header -->
 <div class="header" id="myHeader">
   <h1>Image Grid</h1>
@@ -65,4 +78,5 @@ body {
   <button class="btn active" onclick="two()">2</button>
   <button class="btn" onclick="four()">4</button>
 </div>
+  </body>
 </html>
