@@ -1,5 +1,8 @@
 ---
 layout: post
+title:  "Excision"
+date:   2023-05-29 14:37:44
+categories: update
 ---
 <img src="{{ site.baseurl }}/images/excision.jpg">
 
