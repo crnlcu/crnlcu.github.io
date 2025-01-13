@@ -3,80 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Background Page</title>
+  <title>An Ion Channel Story</title>
   <style>
-    /* General Reset */
-    * {
+    /* General styles */
+    body, html {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Fullscreen container */
-    body {
+      height: 100%;
+      width: 100%;
       font-family: Arial, sans-serif;
-      height: 100vh;
-      overflow: hidden;
       color: white;
+      overflow: hidden; /* Prevent scrolling */
     }
 
-    /* Video background styling */
-    .video-background {
+    /* Fullscreen video background */
+    .video-container {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: -1;
     }
 
-    .video-background video {
-      width: 100%;
-      height: 100%;
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
     }
 
-    /* Centered text styling */
+    /* Overlay content */
     .content {
       position: absolute;
-      top: 50%;
-      left: 70%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .text-left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
       text-align: left;
     }
 
-    .content h1 {
+    .text-right h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin: 0;
+      font-weight: bold;
     }
 
-    .content p {
-      font-size: 1.5rem;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    .text-right p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Downward arrow */
+    .arrow-down {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Background Video -->
-  <div class="video-background">
+
+  <!-- Video Background -->
+  <div class="video-container">
     <video autoplay muted loop>
-     <source src="{{ site.baseurl }}/bkchannel/media/trajectory_video3.mp4" type="video/mp4">
+      <source src="video_intro.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 
-  <!-- Centered Content -->
+  <!-- Overlay Content -->
   <div class="content">
-  <p>IMAGES FROM</p>
-    <h1>An Ion Channel Story </h1>
-
-  
+    <!-- Left Side: Placeholder for Image or Video -->
+    <div class="text-left">
+      <img src="image_placeholder.png" alt="Molecular structure" style="max-width: 80%; height: auto;">
+    </div>
+    <!-- Right Side: Text Content -->
+    <div class="text-right">
+      <h1>An ion channel story</h1>
+      <p>Lucia Coronel</p>
+    </div>
   </div>
-   <footer>
-        <p>&copy; 2025 An Ion Channel Story</p>
-    </footer>
-</body>
-</html> 
 
+  <!-- Down Arrow -->
+  <div class="arrow-down">
+    ↓
+  </div>
+
+</body>
+</html>
