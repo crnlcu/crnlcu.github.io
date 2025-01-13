@@ -3,23 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page 1</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>An Ion Channel Story</title>
+  <style>
+    /* Basic Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      color: gray;
+      background-color: #FFFFFF;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Side Menu Styles */
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Initially hidden off-screen */
+      width: 250px; /* Width of the side menu */
+      height: 100%;
+      background-color: #333;
+      color: white;
+      transition: 0.3s; /* Smooth transition when sliding */
+      z-index: 1000;
+      padding-top: 60px; /* Space for menu items */
+    }
+
+    .menu-bar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-bar ul li {
+      padding: 8px 16px;
+      text-align: left;
+    }
+
+    .menu-bar ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .menu-bar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Hamburger Icon Styles */
+    .menu-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1001; /* Above the menu */
+    }
+
+    /* Hover Expansion */
+    .menu-bar:hover {
+      left: 0; /* Move the menu into view when hovered */
+    }
+
+    .menu-bar.open {
+      left: 0; /* Make the menu visible when the class 'open' is added */
+    }
+
+    /* General content styling */
+    .content {
+      margin-left: 0; /* Adjust content to fit when menu is expanded */
+      transition: margin-left 0.3s; /* Smooth content shift when the menu expands */
+    }
+
+    .menu-bar.open + .content {
+      margin-left: 200px; /* Shift content when menu is expanded */
+    }
+
+    /* Container for the images */
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin-top: 100px; /* Add some space from top */
+    }
+
+    .container {
+      width: 30%;
+      padding: 20px;
+      background-color: #FFFFFF;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box-shadow back */
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    /* Animation for the containers */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Delay animations for each container */
+    .container:nth-child(1) {
+      animation-delay: 0.3s;
+    }
+
+    .container:nth-child(2) {
+      animation-delay: 0.6s;
+    }
+
+    .container:nth-child(3) {
+      animation-delay: 0.9s;
+    }
+
+    /* Image styling */
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hover effect for images */
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Top-Right Header */
+    .top-right {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      color: #333;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h1>Page 1</h1>
-    <p>This is the content of Page 1.</p>
+  <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776; <!-- Hamburger icon -->
   </div>
+
+  <!-- Side Menu -->
+  <div class="menu-bar" id="menuBar">
+    <ul>
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">BK</a></li>
+      <li><a href="#section3">Lipids</a></li>
+      <li><a href="#section4">About This</a></li>
+      <li><a href="#section5">About Me</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Top-right Heading -->
+    <h2 class="top-right">Images</h2>
+    
+    <div class="image-container">
+      <!-- First Image Container -->
+      <div class="container" id="section1">
+        <img src="https://crnlcu.github.io/bkchannel/media/latoCLOSED.png" alt="Image 1">
+      </div>
+
+      <!-- Second Image Container -->
+      <div class="container" id="section2">
+        <img src="https://crnlcu.github.io/bkchannel/media/latoINT.png" alt="Image 2">
+      </div>
+
+      <!-- Third Image Container -->
+      <div class="container" id="section3">
+        <img src="https://crnlcu.github.io/bkchannel/media/popc_s.png" alt="Image 3">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menuBar = document.getElementById('menuBar');
+      menuBar.classList.toggle('open'); /* Toggle the 'open' class */
+    }
+  </script>
 </body>
 </html>
