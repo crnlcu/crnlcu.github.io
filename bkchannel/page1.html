@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -93,17 +93,43 @@
     }
 
     .container {
-      width: 30%;
+      width: 50%;
       padding: 20px;
       background-color: #FFFFFF;
       margin: 20px;
       border-radius: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s forwards;
+      position: relative; /* Enable absolute positioning inside */
+    }
+
+    /* First container */
+    .container:nth-child(1) {
+      width: 40%; /* Adjust size */
+      position: absolute;
+      top: 100px; /* Place at 100px from the top */
+      left: 50px; /* Place 50px from the left */
+    }
+
+    /* Second container */
+    .container:nth-child(2) {
+      width: 34%; /* Adjust size */
+      position: absolute;
+      top: 300px; /* Place at 300px from the top */
+      left: 580px; /* Place 200px from the left */
+    }
+
+    /* Third container */
+    .container:nth-child(3) {
+      width: 15%; /* Adjust size */
+      position: absolute;
+      top: 200px; /* Place at 500px from the top */
+      right: 10px; /* Place 400px from the left */
     }
 
     /* Animation for the containers */
+    .container:nth-child(1), .container:nth-child(2), .container:nth-child(3) {
+      animation: fadeInUp 0.8s forwards;
+    }
+
     @keyframes fadeInUp {
       0% {
         opacity: 0;
@@ -113,19 +139,6 @@
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    /* Delay animations for each container */
-    .container:nth-child(1) {
-      animation-delay: 0.3s;
-    }
-
-    .container:nth-child(2) {
-      animation-delay: 0.6s;
-    }
-
-    .container:nth-child(3) {
-      animation-delay: 0.9s;
     }
 
     /* Image styling */
@@ -171,7 +184,6 @@
     </ul>
   </div>
 
-    
   <!-- Main Content -->
   <div class="content">
     <!-- Top-right Heading -->
@@ -192,8 +204,7 @@
       <div class="container" id="section3">
         <img src="https://crnlcu.github.io/bkchannel/media/popc_s.png" alt="Image 3">
       </div>
-   
-     </div>
+    </div>
   </div>
 
   <script>
