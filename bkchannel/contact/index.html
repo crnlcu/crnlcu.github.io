@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+/* Fixed top menu bar */
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #;
+      color: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
 
+    .menu-bar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu-bar ul li {
+      margin-right: 10px;
+    }
+
+    .menu-bar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      display: block;
+    }
+
+    .menu-bar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+    /* General styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden; /* Prevent scrolling */
+    }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
