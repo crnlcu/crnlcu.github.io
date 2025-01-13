@@ -54,23 +54,24 @@
 
     /* Fullscreen video background */
     .video-container {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 75wp;         /* Set your desired width */
-      height: 60wh;;        /* Set your desired height */
-      overflow: hidden;
-    }
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75vw;         /* Set the width to 75% of the viewport width */
+    height: 60vh;        /* Set the height to 60% of the viewport height */
+    overflow: hidden;    /* Hide the overflow (video clipping) */
+}
 
-    .video-container video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;    /* Ensures the video covers the container */
-    }
+/* Video inside the container */
+.video-container video {
+    position: absolute;
+    top: 50%;             /* Vertically center the video */
+    left: 50%;            /* Horizontally center the video */
+    transform: translate(-50%, -50%); /* Center the video perfectly */
+    min-width: 100%;      /* Ensure the video is at least as wide as the container */
+    min-height: 100%;     /* Ensure the video is at least as tall as the container */
+    object-fit: cover;    /* Ensures the video covers the container without stretching */
+}
 
     /* Overlay content */
     .content {
