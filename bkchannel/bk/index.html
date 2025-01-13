@@ -1,1 +1,304 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>An Ion Channel Story</title>
+  <style>
+    /* Basic Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      color: gray;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    /* Side Menu Styles */
+    .menu-bar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      transition: 0.3s;
+      z-index: 1000;
+      padding-top: 60px;
+    }
+
+    .menu-bar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-bar ul li {
+      padding: 8px 16px;
+      text-align: left;
+    }
+
+    .menu-bar ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .menu-bar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    .menu-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu-bar:hover {
+      left: 0;
+    }
+
+    .menu-bar.open {
+      left: 0;
+    }
+
+    .content {
+      margin-left: 0;
+      transition: margin-left 0.3s;
+    }
+
+    .menu-bar.open + .content {
+      margin-left: 200px;
+    }
+
+    .section {
+      padding: 50px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      padding: 20px;
+      background-color: #FFFFFF;
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .new-section {
+      background-color: black;
+      padding: 150px 100px;
+      color: white;
+    }
+
+    .new-section .image-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .new-section .image-row img {
+      width: 16%;
+      height: auto;
+      border-radius: 0px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .new-section .image-row img:hover {
+      transform: scale(1.05);
+    }
+   
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 60%;
+      text-align: center;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      background-color: #575757;
+    }
+
+    /* Specific Section Styling */
+    #section1 .container:nth-child(1) {
+      width: 40%;
+    }
+
+    #section1 .container:nth-child(2) {
+      width: 30%;
+    }
+
+    #section1 .container:nth-child(3) {
+      width: 10%;
+    }
+
+    #section3 .container {
+      width: 150vw;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Side Menu -->
+  <div class="menu-bar" id="menuBar">
+    <ul>
+      <li><a href="/bkchannel/index.html">home</a></li>
+      <li><a href="/bkchannel/page1.html">BK</a></li>
+      <li><a href="/bkchannel/aboutthis/index.html">about this & me</a></li>
+      <li><a href="/bkchannel/contact/index.html">contact me</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Section 1 -->
+    <div class="section" id="section1">
+
+      <div class="image-container">
+        <div class="container">
+          <img src="https://crnlcu.github.io/bkchannel/media/latoCLOSED.png" alt="Image 1">
+        </div>
+        <div class="container">
+          <img src="https://crnlcu.github.io/bkchannel/media/latoINT.png" alt="Image 2">
+        </div>
+        <div class="container">
+          <img src="https://crnlcu.github.io/bkchannel/media/popc_s.png" alt="Image 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="section2">
+      <div class="new-section">
+        <div class="image-row">
+          <img src="https://crnlcu.github.io/bkchannel/media/helix0.png" alt="Image 1">
+          <img src="https://crnlcu.github.io/bkchannel/media/helix1.png" alt="Image 2">
+          <img src="https://crnlcu.github.io/bkchannel/media/helix2.png" alt="Image 3">
+          <img src="https://crnlcu.github.io/bkchannel/media/helix3.png" alt="Image 4">
+          <img src="https://crnlcu.github.io/bkchannel/media/helix4.png" alt="Image 5">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+   <div class="section" id="section3">
+
+      <div class="image-container">
+        <div class="container" onclick="openModal('Side view: BK Channel transmembrane portion.')">
+          <img src="https://crnlcu.github.io/bkchannel/media/lato3.png" alt="Image 4">
+        </div>
+        <h2>looking at the way out</h2>
+        <div class="container" onclick="openModal('Bottom view: Ion channel states.')">
+          <img src="https://crnlcu.github.io/bkchannel/media/3sotto.png" alt="Image 5">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Section 4 -->
+   <div class="section" id="section4">
+
+      <div class="image-container">
+        <div class="container" >
+          <img src="https://crnlcu.github.io/bkchannel/media/tlayer.png" alt="Image 4">
+        </div>
+        <h3>bilayer membrane</h3>
+        <div class="container">
+          <img src="https://crnlcu.github.io/bkchannel/media/blayer.png" alt="Image 5">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <h3 id="modalTitle">Modal Title</h3>
+      <p id="modalDescription">Here will be the explanation for the image.</p>
+      <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menuBar = document.getElementById('menuBar');
+      menuBar.classList.toggle('open');
+    }
+
+    function openModal(description) {
+      const modal = document.getElementById('imageModal');
+      const title = document.getElementById('modalTitle');
+      const descriptionText = document.getElementById('modalDescription');
+
+      title.textContent = description.split(":")[0];
+      descriptionText.textContent = description.split(":")[1];
+
+      modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
