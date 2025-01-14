@@ -49,29 +49,17 @@
       font-family: Arial, sans-serif;
       color: white;
       overflow: hidden; /* Prevent scrolling */
+      background-color: #000000;
     }
-  background-color: #000000;
+  
 
-    /* Fullscreen video background */
-    .video-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 75vw;         /* Set the width to 75% of the viewport width */
-    height: 60vh;        /* Set the height to 60% of the viewport height */
-    overflow: hidden;    /* Hide the overflow (video clipping) */
-}
-
-/* Video inside the container */
-.video-container video {
-    position: absolute;
-    top: 50%;             /* Vertically center the video */
-    left: 50%;            /* Horizontally center the video */
-    transform: translate(-50%, -50%); /* Center the video perfectly */
-    min-width: 100%;      /* Ensure the video is at least as wide as the container */
-    min-height: 100%;     /* Ensure the video is at least as tall as the container */
-    object-fit: cover;    /* Ensures the video covers the container without stretching */
-}
+    video {
+      max-width: 80%;
+      height: auto;
+      bottom: 0px;
+      left: 0px;
+      overflow: hidden;
+    }
 
     /* Overlay content */
     .content {
@@ -158,12 +146,12 @@ a:hover {
     </ul>
   </div>
   <!-- Video Background -->
-  <div class="video-container">
+ 
      <video autoplay muted loop>
       <source src="https://crnlcu.github.io/bkchannel/media/trajectory_video3.mp4" type="video/mp4">
    
     </video>
-  </div>
+
 
   <!-- Overlay Content -->
   <div class="content">
