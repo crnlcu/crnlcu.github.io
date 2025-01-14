@@ -44,12 +44,11 @@
     body, html {
       margin: 0;
       padding: 0;
-     
-      width: 100%;
       height: auto;
+      width: 100%;
       font-family: Arial, sans-serif;
       color: white;
-      overflow: hidden; /* Prevent scrolling */
+      overflow: scroll; /* Prevent scrolling */
       background-color: #000000;
     }
   
@@ -58,41 +57,46 @@
     position:absolute;
       max-width: 80%;
     height: auto;
-      top: 30vh;
+      top: 10vh;
     left: 0vw;
-      overflow: hidden;
+      overflow: scroll;
     }
 
+
+
     .text-right {
-      position:fixed;
-      font-size:2vw;
-      left: 45vw;
-      top:25vh;
+      width: 100%;
+      height: auto;
+      position:absolute;
+      left: 55vw;
+      top:20vh;
       justify-content: center;
       padding: 20px;
       text-align: left;
-      z-index: inherit;
+      z-index: 1000;
+      font-size:2vw;
     }
 
     .text-right h1 {
-      
+
       margin: 0;
       font-weight: bold;
       z-index: inherit;
     }
 
     .text-right p {
-      font-size:1.5vw;
+      font-size: 1.5vw;
       margin-top: 10px;
       text-transform: uppercase;
       letter-spacing: 2px;
       z-index: inherit;
     }
 
+
     /* Downward arrow */
     .arrow-down {
       position: absolute;
-      bottom: 20px;
+      top: 280px;
       right: 20px;
       font-size: 5rem;
       animation: bounce 2s infinite;
@@ -106,16 +110,45 @@
         transform: translateY(10px);
       }
     }
-    a:link,a:hover {
+    a:link, a:hover{
   color: pink;
   background-color: transparent;
   text-decoration: none;
 }
+.section0 {
+      width: 100vw;
+      height:  42vw;
+      background-color:black;
+      padding: 20px;
+      color: white;
+    }
 
- 
+
+.section1 {
+      width: 100vw;
+      height: 52vw;
+      background-color:white;
+      padding: 10px;
+      color: black;
+    }
+    .section1 img {
+      width: 100%;
+      height: auto;
+      top: 0;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .section1 img:hover {
+      transform: scale(1.05);
+    }
+
+
   </style>
 </head>
 <body>
+<!-- Section 1 -->
+<div class="section0" id="section0">
 <!-- Menu Bar -->
   <div class="menu-bar">
     <ul>
@@ -126,24 +159,34 @@
     </ul>
   </div>
   <!-- Video Background -->
- 
-     <video autoplay muted loop>
+  <video autoplay muted loop>
       <source src="https://crnlcu.github.io/bkchannel/media/trajectory_video3.mp4" type="video/mp4">
-   
-    </video>
+  </video>
 
 
-  
   <div class="text-right">
    <h1>An ion channel story</h1>
       <p>Lucia Coronel</p>
-</div>
-
+  </div>
 
   <!-- Down Arrow -->
   <div class="arrow-down">
-  <a href="/bkchannel/bk/index.html">↓</a>
+  ↓
+  </div>
 </div>
+
+<!-- Main Content -->
+
+    <!-- Section 1 -->
+    <div class="section1" id="section1">
+
+    <h1 style="font-size:40px;color:gray;text-align:right;">Images </h1>
+    <img src="https://crnlcu.github.io/bkchannel/media/latoCLOSED.png" alt="Image 1" style="width:40vw;height:auto;">
+    <img src="https://crnlcu.github.io/bkchannel/media/latoINT.png" alt="Image 2" style="width:30vw;height:auto;">
+    <img src="https://crnlcu.github.io/bkchannel/media/popc_s.png" alt="Image 3" style="width:12vw;height:auto;">
+
+
+    </div>
   
 
 
