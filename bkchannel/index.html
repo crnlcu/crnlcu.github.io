@@ -40,6 +40,33 @@
       background-color: #575757;
       border-radius: 5px;
     }
+    .menu-icon {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu-bar:hover {
+      left: 0;
+    }
+
+    .menu-bar.open {
+      left: 0;
+    }
+       .content {
+      margin-left: 0;
+      transition: margin-left 0.3s;
+    }
+
+    .menu-bar.open + .content {
+      margin-left: 200px;
+    }
+
+
+
 
     /* General styles */
     body, html {
@@ -193,6 +220,20 @@
 
   <!-- Section 1 -->
   <div class="section1" id="section1">
+   <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Side Menu -->
+  <div class="menu-bar" id="menuBar">
+    <ul>
+      <li><a href="/bkchannel/index.html">home</a></li>
+      <li><a href="/bkchannel/page1.html">BK</a></li>
+      <li><a href="/bkchannel/aboutthis/index.html">about this & me</a></li>
+      <li><a href="/bkchannel/contact/index.html">contact me</a></li>
+    </ul>
+  </div>
     <h1 style="font-size:4vw;color:gray;text-align:right;">Images </h1>
     <img src="https://crnlcu.github.io/bkchannel/media/images.png" alt="Image 1">
 
