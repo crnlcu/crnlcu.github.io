@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>An Ion Channel Story</title>
   <style>
- /* Fixed top menu bar */
+    /* Fixed top menu bar */
     .menu-bar {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #;
+      background-color: transparent;
       color: white;
       padding: 10px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       z-index: 1000;
+      font-size: 1.5vw;
     }
 
     .menu-bar ul {
@@ -40,6 +40,7 @@
       background-color: #575757;
       border-radius: 5px;
     }
+
     /* General styles */
     body, html {
       margin: 0;
@@ -48,40 +49,41 @@
       width: 100%;
       font-family: Arial, sans-serif;
       color: white;
-      overflow: scroll; /* Prevent scrolling */
       background-color: #000000;
     }
-  
 
-    video {
-    position:absolute;
-      max-width: 80%;
-    height: auto;
-      top: 10vh;
-    left: 0vw;
-      overflow: scroll;
+    .section0 {
+      position: relative;
+      width: 100vw;
+      height: 65vw;
+      color: white;
+      overflow: hidden; /* Ensures the video doesn't overflow */
     }
 
-
+    .section0 video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the video covers the entire section */
+      z-index: 1; /* Places the video behind other elements */
+    }
 
     .text-right {
       width: 100%;
-      height: auto;
-      position:absolute;
+      position: absolute;
       left: 55vw;
-      top:20vh;
-      justify-content: center;
+      top: 20vh;
       padding: 20px;
       text-align: left;
       z-index: 1000;
-      font-size:2vw;
+      font-size: 2vw;
     }
 
     .text-right h1 {
-
       margin: 0;
       font-weight: bold;
-      z-index: inherit;
     }
 
     .text-right p {
@@ -89,17 +91,16 @@
       margin-top: 10px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      z-index: inherit;
     }
-
 
     /* Downward arrow */
     .arrow-down {
       position: absolute;
-      margin-top: 3em;
-	  right: 0.67em;
+      bottom: 10px;
+      right: 10px;
       font-size: 10vw;
       animation: bounce 2s infinite;
+      z-index: 1000;
     }
 
     @keyframes bounce {
@@ -110,31 +111,27 @@
         transform: translateY(10px);
       }
     }
-    a:link, a:hover{
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-.section0 {
-      width: 100vw;
-      height:  42vw;
-      background-color:black;
-      padding: 20px;
-      color: white;
+
+    a:link, a:hover {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
     }
 
-
-.section1 {
+    .section1, .section2 {
       width: 100vw;
-      height: 52vw;
-      background-color:white;
-      padding: 10px;
+      height: 65vw;
+      padding: 20px;
+    }
+
+    .section1 {
+      background-color: white;
       color: black;
     }
+
     .section1 img {
       width: 100%;
       height: auto;
-      top: 0;
       border-radius: 8px;
       transition: transform 0.3s ease-in-out;
     }
@@ -142,17 +139,15 @@
     .section1 img:hover {
       transform: scale(1.05);
     }
-.section2 {
-      width: 100vw;
-      height: 52vw;
-      background-color:black;
-      padding: 20px;
-      color: black;
+
+    .section2 {
+      background-color: black;
+      color: white;
     }
+
     .section2 img {
       width: 18%;
       height: auto;
-      top: 10px;
       border-radius: 8px;
       transition: transform 0.3s ease-in-out;
     }
@@ -160,60 +155,55 @@
     .section2 img:hover {
       transform: scale(1.05);
     }
-
-
   </style>
 </head>
 <body>
-<!-- Section 1 -->
-<div class="section0" id="section0">
-<!-- Menu Bar -->
-  <div class="menu-bar">
-    <ul>
-      <li><a href="/bkchannel/index.html">home</a></li>
-      <li><a href="/bkchannel/bk/index.html">BK</a></li>
-      <li><a href="/bkchannel/about/index.html">about this & me</a></li>
-      <li><a href="/bkchannel/contact/index.html">contact me</a></li>
-    </ul>
-  </div>
-  <!-- Video Background -->
-  <video autoplay muted loop>
-      <source src="https://crnlcu.github.io/bkchannel/media/trajectory_video3.mp4" type="video/mp4">
-  </video>
+  <!-- Section 0 -->
+  <div class="section0" id="section0">
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+      <ul>
+        <li><a href="/bkchannel/index.html">home</a></li>
+        <li><a href="/bkchannel/bk/index.html">BK</a></li>
+        <li><a href="/bkchannel/about/index.html">about this & me</a></li>
+        <li><a href="/bkchannel/contact/index.html">contact me</a></li>
+      </ul>
+    </div>
 
+    <!-- Video Background -->
+    <video autoplay muted loop>
+      <source src="https://crnlcu.github.io/bkchannel/media/videoBW.mp4" type="video/mp4">
+    </video>
 
-  <div class="text-right">
-   <h1>An ion channel story</h1>
+    <div class="text-right">
+      <h1>An ion channel story</h1>
       <p>Lucia Coronel</p>
+    </div>
+
+    <!-- Down Arrow -->
+    <div class="arrow-down"> ↓ </div>
   </div>
 
-  <!-- Down Arrow -->
-  <div class="arrow-down"> ↓ </div>
-</div>
+  <!-- Section 1 -->
+  <div class="section1" id="section1">
+    <h1 style="font-size:4vw;color:gray;text-align:right;">Images </h1>
+    <img src="https://crnlcu.github.io/bkchannel/media/images.png" alt="Image 1">
+  </div>
 
-<!-- Main Content -->
-
-    <!-- Section 1 -->
-    <div class="section1" id="section1">
-
-    <h1 style="font-size:40px;color:gray;text-align:right;">Images </h1>
-    <img src="https://crnlcu.github.io/bkchannel/media/images.png" alt="Image 1" style="width:100vw;height:auto;">
-
-
-
-    </div>
   <!-- Section 2 -->
-    <div class="section2" id="section2">
-     
-          <img src="https://crnlcu.github.io/bkchannel/media/helix0.png" alt="Image 1">
-          <img src="https://crnlcu.github.io/bkchannel/media/helix1.png" alt="Image 2">
-          <img src="https://crnlcu.github.io/bkchannel/media/helix2.png" alt="Image 3">
-          <img src="https://crnlcu.github.io/bkchannel/media/helix3.png" alt="Image 4">
-          <img src="https://crnlcu.github.io/bkchannel/media/helix4.png" alt="Image 5">
-
+  <div class="section2" id="section2">
+    <div style="display: inline-block;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix0.png" alt="Image 1" style="width:16vw;height:auto;">
     </div>
-
-
-
+    <div style="display: inline-block;">
+      <h2 style="width:35vw;color:gray;text-align:right;">amino acids sequence visualization</h2>
+    </div>
+    <div style="display: inline-block;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix1.png" alt="Image 2">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix2.png" alt="Image 3">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix3.png" alt="Image 4">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix4.png" alt="Image 5">
+    </div>
+  </div>
 </body>
 </html>
