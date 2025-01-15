@@ -204,56 +204,95 @@
 <body>
   <!-- Section 0 -->
   <div class="section0" id="section0">
+    <!-- Menu Bar -->
     <div class="menu-bar">
       <ul>
-        <li><a href="/bkchannel/index.html">Home</a></li>
+        <li><a href="/bkchannel/index.html">home</a></li>
         <li><a href="/bkchannel/bk/index.html">BK</a></li>
-        <li><a href="/bkchannel/about/index.html">About</a></li>
-        <li><a href="/bkchannel/contact/index.html">Contact</a></li>
+        <li><a href="/bkchannel/about/index.html">about this & me</a></li>
+        <li><a href="/bkchannel/contact/index.html">contact me</a></li>
       </ul>
     </div>
+
+    <!-- Video Background -->
     <video autoplay muted loop>
       <source src="https://crnlcu.github.io/bkchannel/media/videoBW.mp4" type="video/mp4">
     </video>
+
     <div class="text-right">
-      <h1>An Ion Channel Story</h1>
+      <h1>An ion channel story</h1>
       <p>Lucia Coronel</p>
     </div>
-    <div class="arrow-down">↓</div>
-  </div>
 
-  <!-- Hamburger Icon and Side Menu -->
-  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-  <div class="menu-bar-side" id="menuBar-side">
-    <ul>
-      <li><a href="#section0">Home</a></li>
-      <li><a href="#section1">BK</a></li>
-      <li><a href="/bkchannel/about/index.html">About</a></li>
-      <li><a href="/bkchannel/contact/index.html">Contact</a></li>
-    </ul>
+    <!-- Down Arrow -->
+    <div class="arrow-down"> ↓ </div>
   </div>
 
   <!-- Section 1 -->
   <div class="section1" id="section1">
-    <h1>Images</h1>
+   <!-- Hamburger Icon -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+  <!-- Side Menu -->
+  <div class="menu-bar-side" id="menuBar-side">
+    <ul>
+      <li><a href="#section0"</a></li>
+      <li><a href="#section1">BK</a></li>
+      <li><a href="/bkchannel/about/index.html">about this & me</a></li>
+      <li><a href="/bkchannel/contact/index.html">contact me</a></li>
+    </ul>
+  </div>
+    <h1 style="font-size:4vw;color:gray;text-align:right;">Images </h1>
     <img src="https://crnlcu.github.io/bkchannel/media/images.png" alt="Image 1">
-    <p>Amino acid sequence visualization</p>
+
+      <p style="width:35vw;color:#8B61c2;text-align:right"> amino acid sequence visualization</p>
+  
   </div>
 
   <!-- Section 2 -->
   <div class="section2" id="section2">
-    <img src="https://crnlcu.github.io/bkchannel/media/helix0.png" alt="Helix 0">
-    <img src="https://crnlcu.github.io/bkchannel/media/helix1.png" alt="Helix 1">
-    <img src="https://crnlcu.github.io/bkchannel/media/helix2.png" alt="Helix 2">
-    <img src="https://crnlcu.github.io/bkchannel/media/helix3.png" alt="Helix 3">
-    <img src="https://crnlcu.github.io/bkchannel/media/helix4.png" alt="Helix 4">
+    <div style="display: inline-block;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix0.png" alt="Image 1" style="width:16vw;height:auto;">
+    
+      <img src="https://crnlcu.github.io/bkchannel/media/helix1.png" alt="Image 2" style="width:18vw;height:auto;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix2.png" alt="Image 3" style="width:18vw;height:auto;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix3.png" alt="Image 4" style="width:18vw;height:auto;">
+      <img src="https://crnlcu.github.io/bkchannel/media/helix4.png" alt="Image 5" style="width:20vw;height:auto;">
+    </div>
   </div>
-
-  <script>
+  
+  <!-- Section 3 -->
+  <div class="section1" id="section3">
+    
+    <img src="https://crnlcu.github.io/bkchannel/media/lato3.png" alt="" style="width:95vw;height:auto;">
+    <p style="width:50vw;color:#8B61c2;text-align:center"> looking at the way out</p>
+    <img src="https://crnlcu.github.io/bkchannel/media/3sotto.png" alt="" style="width:100vw;height:auto;">
+</div>
+  
+ 
+    
+    <!-- Section 4 -->
+  <div class="section1" id="section4">
+  
+    <img src="https://crnlcu.github.io/bkchannel/media/popc_4.png" alt="" style="width:70vw;height:auto;align:right">
+    <h1 style="width:50vw;text-align:right" align="right;"> LIPIDS</h1>
+    <img src="https://crnlcu.github.io/bkchannel/media/popc.png" alt="" style="width:40vw;height:auto;">
+  </div>
+   <!-- Section 5 -->
+  <div class="section1" id="section5">
+  
+    <img src="https://crnlcu.github.io/bkchannel/media/tlayer.png" alt="" style="width:100vw;height:auto;">
+    <p style="width:50vw;text-align:center" align="center;"> bilayer membrane</p>
+    <img src="https://crnlcu.github.io/bkchannel/media/blayer.png" alt="" style="width:100vw;height:auto;">
+      </div>
+ <script>
     function toggleMenu() {
-      const sideMenu = document.getElementById('menuBar-side');
-      sideMenu.classList.toggle('open');
+      const menuBar = document.getElementById('menuBar-side');
+      menuBar.classList.toggle('open');
     }
+
   </script>
 </body>
 </html>
