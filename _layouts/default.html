@@ -1,21 +1,60 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Lucia Coronel</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Include Top Navigation Bar -->
+  {% include header.html %}
+
+  <!-- Main Content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} Lucia Coronel | All rights reserved</p>
+  </footer>
+
+  <!-- Optional: Mobile Menu Toggle Script -->
+  <script>
+    const menuToggle = document.createElement('div');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    document.querySelector('.site-header .container').appendChild(menuToggle);
+
+    menuToggle.addEventListener('click', () => {
+      document.querySelector('.navbar').classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE HTML>
 <!--
 	Read Only by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<!-- <html>
     {% include /head.html %}
     <body>
         <div id="wrapper">
         {% include /header.html %}
 
             <!-- Main -->
-            <div id="main">
+ <!--           <div id="main">
                 {{ content }}
 
             </div>
             {% include /footer.html %}
 		</div>
 	</body>
-</html>
+</html> -->
