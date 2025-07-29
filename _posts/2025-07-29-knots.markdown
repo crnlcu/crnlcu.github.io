@@ -5,6 +5,7 @@ date: 2025-07-29
 tags: [knots, dna, supercoiling, topology]
 author: Lucia Coronel
 categories: science
+description: "A quick introduction to knotted DNA plus a fun fact."
 ---
 <h2> <b>Part 1</b>  – General Information about DNA and Knotted DNA </h2>
 
