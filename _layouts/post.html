@@ -117,35 +117,6 @@
   
 
 
- 
-  <div class="post-list">
-  {% for post in site.posts %}
-    <div class="post-card">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-      {% if post.description %}
-        <p>{{ post.description }}</p>
-      {% endif %}
-    </div>
-  {% endfor %}
-</div>
-
-  
- 
- 
-    
-   
-      
-      
-
-  
-</body>
-</html>
-<!---
-layout: default
----
-
-
 <div class="post-list">
   {% for post in site.posts %}
     <div class="post-card">
@@ -179,4 +150,8 @@ layout: default
     </div>
 
 </section> 
-    -->
+ 
+</body>
+</html>
+
+
