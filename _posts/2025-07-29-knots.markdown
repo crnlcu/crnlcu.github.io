@@ -9,7 +9,10 @@ categories: science
 <h2> <b>Part 1</b>  – General Information about DNA and Knotted DNA </h2>
 
 <p> Our genetic code is stored in a long and beautiful molecule called DNA (Deoxyribonucleic Acid). It contains the information necessary for protein production, written in an alphabet consisting of four letters (known by their conventional labels A, T, G, and C), or building blocks called nucleotides. This code is read and transcribed into RNA, which is later translated into the desired protein. <br>
-<img src="https://nci-media.cancer.gov/pdq/media/images/761782.jpg">
+
+<a href="https://nci-media.cancer.gov/pdq/media/images/761782.jpg">
+<img src="https://nci-media.cancer.gov/pdq/media/images/761782.jpg"  width="80" height=auto>
+</a>
 Simple, isn’t it? <br>
 Deceptively simple, as becomes clear when we look closer. Let’s focus on the reading part: since the mid-1950s, we’ve known that DNA is a double helix, and that nucleotides pair complementarily (A pairs with T, and C pairs with G). This means that DNA consists of two chains of nucleotides, two complementary strands paired and twisted together. Enzymes must read the genetic code, aka the sequence of A,C,G and Ts, on only one of these strands. For this to happen, the strands must first be separated by unwinding the double helix and unzipping the strands. As we can easily imagine, the more the strands are separated, the more the twisting shifts along the molecule, creating increasingly tangled clumps. These tangles would jam the DNA-reading machinery, potentially disrupting RNA production and, as a downstream effect, protein assembly, ultimately impairing cell function. <br>
 Yet this does not happen! <br>
