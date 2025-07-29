@@ -2,28 +2,9 @@
 layout: default
 ---
 
-<head>
-  <style>
-    /*  CSS goes here */
-    body {
-      color: #888;
-		font-family: 'Segoe UI', sans-serif;
-		font-size: 12pt;
-		font-weight: 300;
-		line-height: 1em;
-    }
-    h1, h2, h3 {
-	  word-break: keep-all;
-	}
-    
 
-  </style>
-
-  
-</head>
-<body>
  
-  <main class="post-container">
+  <div class="post-container">
     <article class="post">
       <h1 class="post-title">{{ page.title }}</h1>
       <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
@@ -42,7 +23,7 @@ layout: default
         {% endif %}
       </footer>
     </article>
-  </main>
+  </civ>
 
   <footer class="site-footer">
     <p>&copy; {{ site.time | date: "%Y" }} Gating I Blog</p>
