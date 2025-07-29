@@ -1,13 +1,8 @@
 ---
-layout: none
+layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=85%, initial-scale=1.0">
-  <title>{{ page.title }} | Gating I Blog</title>
   <style>
     /*  CSS goes here */
     body {
@@ -20,159 +15,14 @@ layout: none
     h1, h2, h3 {
 	  word-break: keep-all;
 	}
-    .post-container {
-      max-width: 75%;
-      margin: 30px auto;
-      background: #fff;
-      padding: 30px;
-      /*border-radius: 8px;
-       box-shodow: 1.5px 7px rgba(0,0,0,0.1);*/
-    }
-    .post-title {
-      margin-top: 5px;
-      color: #2c3e50;
-    }
-    .post-content {
-      line-height: 1.6;
-    }
-    .post-footer {
-      margin-top: 50px;
-      display: flex;
-      justify-content: space-between;
-      font-weight: bold;
-    }
-    .post-footer a {
-      color: #507d94;
-      text-decoration: none;
-    }
-    .post-footer a:hover {
-      text-decoration: underline;
-    }
-    .post-list {
-  	display: flex;
-  	flex-direction: column;
-  	gap: 1.5rem;
-  	padding: 1rem 0;
-    }
-    .post-card {
-  	background: #ffffff;
-  	border-radius: 10px;
-  	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  	padding: 1.5rem;
-  	transition: box-shadow 0.2s ease;
-    }
-    .post-card:hover {
-  	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-     }
-    .post-card h2 {
-  	margin-top: 0;
-  	margin-bottom: 0.5rem;
-  	font-size: 1.4rem;
-	}
-    .post-card h2 a {
-  	text-decoration: none;
-     }
-    .post-card h2 a:hover {
-   	text-decoration: underline;
-	}
-    .post-date {
-  	color: #888;
-  	font-size: 0.9rem;
-  	margin-bottom: 1rem;
-    }
-    .post-description {
-  	font-size: 1.1em;
-  	color: #555;
-  	margin: 10px 0 20px;
-  	font-style: italic;
-     }
-	  	
-.site-header {
-  width: 100%;
-  background-color: #fff; /* dark blue-gray */
-  color: #2c3e50;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 100;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Default navigation links */
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #ecf0f1;
-  text-decoration: none;      /* removes underline */
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #1abc9c;
-  text-decoration: none;      /* keeps no underline on hover */
-}
-
-.logo a {
-  color: #fff;
-  text-decoration: none;      /* no underline on logo link */
-}
-/* Hamburger icon (hidden by default) */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #2c3e50;
-    flex-direction: column;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
+    
 
   </style>
 
   
 </head>
 <body>
-  <header class="site-header">
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/background/' | relative_url }}"> Background </a>
-      <a href="{{ '/research/' | relative_url }}"> Research </a>
-      <a href="{{ '/blog/' | relative_url }}"> Gating I Blog</a>
-      <a href="{{ '/bkchannel/' | relative_url }}"> An Ion Channel Story </a>
-      <a href="{{ '/contact/' | relative_url }}"> Contact </a>
-      <a href="{{ '/gallery/' | relative_url }}"> Gallery </a>
-    </nav>
-  </header>
-
+ 
   <main class="post-container">
     <article class="post">
       <h1 class="post-title">{{ page.title }}</h1>
