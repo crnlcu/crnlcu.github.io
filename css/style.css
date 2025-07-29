@@ -113,11 +113,11 @@ h1, h2, h3 {
   text-align: left;
   gap: 35px; /* space between image and text */
   padding: 50px;
-  margin-left: 20%;
+  margin-left: 18%;
 }
 
 .avatar {
-  width: 180px;
+  width: 190px;
   height: auto;
   border-radius: 50%; /* makes it a circle */
   object-fit: cover;
@@ -128,6 +128,8 @@ h1, h2, h3 {
   margin: 0;
   font-size: 1.8rem;
   color: #2c3e50;
+  font-weight: 300;
+ line-height: 1.5em;
 }
 
 .subtitle {
@@ -139,9 +141,9 @@ h1, h2, h3 {
 
 .profile-info h4 {
   margin-top: 5px;
-  font-weight: 400;
+  font-weight: 250;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.4em;
 }
 /* ===========================
    CONTENT WRAPPER
