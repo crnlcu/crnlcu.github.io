@@ -114,6 +114,16 @@
       <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
       {% if post.description %}
         <p>{{ post.description }}</p>
+       <section class="post-content">
+            {{ content }}
+        </section>
+        
+        <footer>
+            {% if page.previous %}
+            <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
+            {% if page.next %}
+            <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
+        </footer>
       {% endif %}
     </div>
   {% endfor %}
