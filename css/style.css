@@ -192,7 +192,62 @@ main {
   color: #555;
   font-style: italic;
 }
-
+.post-container {
+      max-width: 75%;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      /*border-radius: 8px;
+       box-shodow: 1.5px 7px rgba(0,0,0,0.1);*/
+    }
+    .post-title {
+      margin-top: 5px;
+      color: #2c3e50;
+    }
+    .post-content {
+      line-height: 1.6;
+    }
+    .post-footer {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .post-footer a {
+      color: #507d94;
+      text-decoration: none;
+    }
+    .post-footer a:hover {
+      text-decoration: underline;
+    }
+    .post-list {
+  	display: flex;
+  	flex-direction: column;
+  	gap: 1.5rem;
+  	padding: 1rem 0;
+    }
+    .post-card {
+  	background: #ffffff;
+  	border-radius: 10px;
+  	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  	padding: 1.5rem;
+  	transition: box-shadow 0.2s ease;
+    }
+    .post-card:hover {
+  	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+     }
+    .post-card h2 {
+  	margin-top: 0;
+  	margin-bottom: 0.5rem;
+  	font-size: 1.4rem;
+	}
+    .post-card h2 a {
+  	text-decoration: none;
+     }
+    .post-card h2 a:hover {
+   	text-decoration: underline;
+	}
+   
 /* ===========================
    FOOTER
 =========================== */
