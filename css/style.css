@@ -162,6 +162,71 @@
     .clear {
         clear: both;
     }
+.site-header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.site-header .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.logo .subtitle {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #0077cc;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  font-size: 1.2rem;
+  color: #444;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0077cc;
+}
 
 /* Section/Article */
 
