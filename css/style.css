@@ -256,7 +256,48 @@ main {
     .post-footer a:hover {
       text-decoration: underline;
     }
-    
+    /* General Page Styles */
+.page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Title */
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Subtitle */
+.page-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #666;
+}
+
+/* Image */
+.page-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  height: auto;
+}
+
+/* Text */
+.page-text {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 /* ===========================
    FOOTER
 =========================== */
