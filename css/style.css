@@ -44,6 +44,9 @@ h1, h2, h3 {
 /* Navigation links */
 .site-header nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   gap: 30px;
 }
 
