@@ -73,18 +73,15 @@ h1, h2, h3 {
 
 /* Responsive menu */
 @media (max-width: 768px) {
-  .site-header nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #fff;
-    flex-direction: column;
-    width: 220px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+  .site-header {
+    padding: 10px 15px;
   }
+
+  .site-header nav {
+    width: 100%;
+    gap: 15px;
+  }
+
 
   .site-header nav.active {
     display: flex;
@@ -144,6 +141,30 @@ h1, h2, h3 {
   font-weight: 250;
   color: #444;
   line-height: 1.4em;
+}
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .avatar {
+    max-width: 200px; /* prevent huge image scaling */
+  }
+
+  .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info h4,
+  .profile-info p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
 }
 /* ===========================
    CONTENT WRAPPER
