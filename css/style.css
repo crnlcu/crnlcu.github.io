@@ -117,7 +117,7 @@ h1, h2, h3 {
 }
 
 .avatar {
-  width: 220px;
+  width: 300px;
   height: auto;
   /*border-radius: 50%; /* makes it a circle */
   object-fit: cover;
