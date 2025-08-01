@@ -1,6 +1,10 @@
----
 layout: post
-title: BK Channel inhibition Abstract
+title: "BK channel inhibition mechanism"
+date: 2023-01-10
+tags: [bk, ionchannel, gating, MD]
+author: Lucia Coronel
+categories: science
+description: "Abstract"
 ---
 
 Abstract
