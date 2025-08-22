@@ -11,7 +11,7 @@ description: "Book recommendation"
 The Art of Satistics was firstly recommended to me by my friend Matteo B. when I visited him in Boston, last May. So, 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
-<img src="{{ site.baseurl }}/images/artofstat.jpeg"  width=100 height=auto alt="book cover" class="page-image">
+<img src="{{ site.baseurl }}/images/artofstat.jpeg"  width=50 height=auto alt="book cover" class="page-image">
  <figcaption>The cover</figcaption>
 <br>
 
@@ -40,7 +40,7 @@ statistical model, model error, etc., in a simple and approachable way that can 
 or without a scientific background. 
 <br>
 <h4> </h4>
-<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="100" height=auto class="page-image">
+<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width=50 height=auto class="page-image">
  <figcaption> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 <br>
