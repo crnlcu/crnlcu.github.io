@@ -20,8 +20,8 @@ I came back from the trip and did what any millennial would do: I ordered myself
  in several areas of statistics, from its use in clinical trials, software, and more math-stuff. 
  He’s also known for his effort in public outreach via his non-technical books. He may be into 
  true crime ‘cause of his collaboration on the paper on the many murders of physician Harold Shipman. 
- Lastly, he’s into Bayesian stuff, honestly, such a green flag! Anyway, here's his <a href="https://www.dpmms.cam.ac.uk/~ds28/"><i>website</i></a>, and professor
- his <a href="https://www.dpmms.cam.ac.uk/person/ds28"> <i>one</i></a>. For anything else, Google’s got your back, I’m not linking the wiki page.
+ Lastly, he’s into Bayesian stuff, honestly, such a green flag! Anyway, here's his <a href="https://www.dpmms.cam.ac.uk/~ds28/"><i><u>website</u></i></a>, and professor
+ his <a href="https://www.dpmms.cam.ac.uk/person/ds28"> <i><u>one</u></i></a>. For anything else, Google’s got your back, I’m not linking the wiki page.
 
 <h4> The Book </h4>
 
