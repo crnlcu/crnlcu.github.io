@@ -290,11 +290,12 @@ main {
 /* Image */
 .page-image {
   display: block;
-  width: auto;
+  /*width: auto;
+   height: auto;*/
   max-width: 600px;
   margin: 0 auto 20px auto;
   border-radius: 8px;
-  height: auto;
+  
 }
 
 /* Text */
