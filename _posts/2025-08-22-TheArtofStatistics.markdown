@@ -52,10 +52,11 @@ is screening for ovarian cancer is beneficial? <br>
 </ul>
 Also, some quotes:
 
- <i>The British statistician George Box has become famous for his brief but invaluable aphorism: ‘All models are wrong, some are useful.’ This pithy statement was based on a lifetime spent bringing statistical expertise to industrial processes, which led Box to appreciate both the power of models, but also the danger of actually starting to believe in them too much.</i>
+<blockquote class="ludwig">
+ The British statistician George Box has become famous for his brief but invaluable aphorism: ‘All models are wrong, some are useful.’ This pithy statement was based on a lifetime spent bringing statistical expertise to industrial processes, which led Box to appreciate both the power of models, but also the danger of actually starting to believe in them too much.</blockquote>
 
-<i>Bayes' legacy is the fundamental insight that the data does not speak for itself – our external knowledge, and even our 
-</i>
+<blockquote class="ludwig"> Bayes' legacy is the fundamental insight that the data does not speak for itself – our external knowledge, and even our judgement, has a central role.
+</blockquote>
 <h4> More Info </h4>
 I found some videos of the author presenting the same topics, here’s a list: 
 <br>
