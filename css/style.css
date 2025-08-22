@@ -235,7 +235,7 @@ main {
       background: #fff;
       padding: 30px;
       /*border-radius: 8px;
-       box-shodow: 1.5px 7px rgba(0,0,0,0.1);*/
+      box-shodow: 1.5px 7px rgba(0,0,0,0.1);*/
     }
     .post-title {
       margin-top: 5px;
@@ -243,6 +243,7 @@ main {
     }
     .post-content {
       line-height: 1.6;
+      text-align: justify;
     }
     .post-footer {
       margin-top: 50px;
