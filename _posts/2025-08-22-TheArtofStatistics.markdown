@@ -40,7 +40,16 @@ The book was first published in 2019, right before the COVID-19 pandemic. That p
  <figcaption> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 
+<h4> Things I liked </h4>
 
+It’s a great book! Full of trivia you can casually drop into your next social dinner: 
+<ul> 
+who was the luckiest passenger on the Titanic
+is screening for ovarian cancer is beneficial?
+ is prayer effective?
+ how popular has my name been over time?
+ how many sexual partners have people in Britain really had?
+</ul>
 
 <h4> More Info </h4>
 I found some videos of the author presenting the same topics, here’s a list: 
