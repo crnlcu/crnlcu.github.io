@@ -11,7 +11,7 @@ description: "Book recommendation"
 The Art of Statistics was first recommended to me by my friend Matteo B. when I visited him in Boston last May. So, 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
-<img src="{{ site.baseurl }}/images/artofstat.jpeg"  width="25%"  alt="book cover" class="page-image">
+<img src="{{ site.baseurl }}/images/artofstat.jpeg"  width="35%"  alt="book cover" class="page-image">
  <figcaption  style="text-align: center">The cover</figcaption>
 <br>
 
@@ -36,7 +36,7 @@ Without assuming prior (wink, you see I like Bayes?) knowledge, the reader’s a
 The book was first published in 2019, right before the COVID-19 pandemic. That pandemic has shown us how tricky data interpretation and communication can be. “Big data” and “data science” have become ubiquitous terms nowadays; hence, a basic grasp of statistics has never been more essential. So, go and read it!
 
 <h4> </h4>
-<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="25%" height=auto class="page-image">
+<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="35%" height=auto class="page-image">
  <figcaption  style="text-align: center;"> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 
