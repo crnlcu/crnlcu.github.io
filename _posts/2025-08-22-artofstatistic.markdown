@@ -5,13 +5,13 @@ date: 2025-08-22
 tags: [statistics, data, models, books, DavidSpiegelhalter,probability,riskalysis]
 author: Lucia Coronel
 categories: books
-description: "book reccomandation"
+description: "Book recommendation"
 ---
 
 The Art of Satistics was firstly recommended to me by Matteo B. when I visited him in Boston, last May. So, 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
-<img src="{{ site.baseurl }}/images/artofstat.jpeg  width="100" height=auto class=center>
+<img src="{{ site.baseurl }}/images/artofstat.jpeg"  width="100" height=auto class=center>
 
 <br>
 
