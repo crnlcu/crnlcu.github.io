@@ -34,14 +34,14 @@ and real-world examples.
 
 Without assuming prior ( wink, you see I like Bayes?) knowledge, the reader's attention will be guided to matters 
 that go often overlooked in everyday life (e.g., what “50% chance of rain” means in weather forecasting, or 
-“the national unemployment rates are.” Reported in the latest news). These are the results of statistical analysis 
+“the national unemployment rates are...” reported in the latest news). These are the results of statistical analysis 
 and data interpretations, which are instead taken as facts. Spiegelhalter stresses key concepts such as prediction, 
 statistical model, model error, etc., in a simple and approachable way that can be beneficial for everyone, with 
 or without a scientific background. 
 <br>
 <h4> </h4>
-<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="300" height=auto class="page-image">
- <figcaption>1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
+<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="100" height=auto class="page-image">
+ <figcaption> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 <br>
 The book was first published in 2019, right before the COVID-19 pandemic. That pandemic has shown us how tricky data 
