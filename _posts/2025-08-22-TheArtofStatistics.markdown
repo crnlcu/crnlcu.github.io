@@ -44,11 +44,15 @@ The book was first published in 2019, right before the COVID-19 pandemic. That p
 
 It’s a great book! Full of trivia you can casually drop into your next social dinner: 
 <ul> 
-who was the luckiest passenger on the Titanic
-is screening for ovarian cancer is beneficial?
- is prayer effective?
- how popular has my name been over time?
- how many sexual partners have people in Britain really had?
+who was the luckiest passenger on the Titanic <br>
+is screening for ovarian cancer is beneficial? <br>
+ is prayer effective?<br>
+ how popular has my name been over time?<br>
+ how many sexual partners have people in Britain really had?<br>
+</ul>
+Also, some quotes:
+<ul>All models are wrong, but some are useful. <br>
+ Bayes' legacy is the fundamental insight that the data does not speak for itself – our external knowledge, and even our judgement, has a central role. 
 </ul>
 
 <h4> More Info </h4>
