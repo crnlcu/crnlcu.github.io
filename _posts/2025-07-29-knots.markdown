@@ -12,7 +12,8 @@ description: "A quick introduction to knotted DNA plus a fun fact."
 <p> Our genetic code is stored in a long and beautiful molecule called DNA (Deoxyribonucleic Acid). It contains the information necessary for protein production, written in an alphabet consisting of four letters (known by their conventional labels A, T, G, and C), or building blocks called nucleotides. This code is read and transcribed into RNA, which is later translated into the desired protein. <br>
 
 <a href="https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/transcription">
-<img src="https://nci-media.cancer.gov/pdq/media/images/761782.jpg"  width="700" height=auto class=center>
+<img src="https://nci-media.cancer.gov/pdq/media/images/761782.jpg"  width="700" height=auto class="page-image">
+ <figcaption  style="text-align: center">Transcription</figcaption>
 </a>
 <br>
 <br>
@@ -24,7 +25,8 @@ Yet this does not happen! <br>
 Nature has evolved countermeasures to deal with these tangles! How? Again, using specialized proteins. There are enzymes called topoisomerases whose task is to untangle DNA through “cut and sew” operations. The simplest type cuts one of the two strands of the helix, relaxes the accumulated twisting by rotating around the other intact strand, and then "sews" it back together. Even from this brief overview, a very dynamic perspective of DNA emerges, which is subjected to incessant enzyme actions that separate the strands, transcribe the genetic code, cut and sew one or both strands to relax the accumulated twisting. As good as that sounds, it doesn’t come free from side effects. All these operations inevitably introduce errors or defects, for instance, knots in the DNA strand. <br>
 
 <a href="https://www.science.org/doi/10.1126/science.2990045">
-<img src="https://www.researchgate.net/profile/Keith-Moffatt/publication/241779935/figure/fig3/AS:298556297629700@1448192776353/Electron-micrograph-of-a-knotted-loop-of-DNA-Reprinted-with-permission-from-66.png"  width="350" height=auto>
+<img src="https://www.researchgate.net/profile/Keith-Moffatt/publication/241779935/figure/fig3/AS:298556297629700@1448192776353/Electron-micrograph-of-a-knotted-loop-of-DNA-Reprinted-with-permission-from-66.png"  width="350" height=auto class="page-image">
+ <figcaption  style="text-align: center">Electron-micrograph of a Knotted DNA</figcaption>
 </a>
 <br>
 Knots cause very serious problems for DNA transcription and replication because they are insurmountable jamming points for molecular machinery. In general, they are lethal for the cell (unless you are a specific cool parasite that makes tangles its superpower). Again, nature has devised countermeasures: other topoisomerases that cut both DNA strands. These topoisomerases identify the “crossings” of knots (you can't make a knot in a rope without it crossing itself)  and act by reversing them, again using a cut-and-sew operation.<br>
@@ -49,12 +51,16 @@ So, what does a trypanosome do? It tangles its DNA rings in order, probably beca
 This fascinating phenomenon, studied in detail by F.J. Arsuaga’s research group, highlights just how important it is to understand the topological, or shape-related, properties of the genome. It’s not just about the genetic code itself, but also about how the DNA is physically arranged and organized. The way these DNA rings are linked and tangled can have a big impact on how efficiently the genetic material is copied and passed on during cell division. Understanding this 3D organization helps uncover new insights into cellular function and could even lead to advances in treating diseases linked to DNA organization.<br>
 Takeaway: while knots are usually harmful, some organisms like trypanosomes use tangled DNA to their advantage. Understanding DNA’s 3D shape is crucial for insights into biology and disease.<br>
 </p>
-<h> Sources:</h>
+<h4> Sources:</h4>
 <p> 
-Lucia Coronel, Antonio Suma, Cristian Micheletti, Dynamics of supercoiled DNA with complex knots: large-scale rearrangements and persistent multi-strand interlocking, Nucleic Acids Research, Volume 46, Issue 15, 6 September 2018, Pages 7533–7541, https://doi.org/10.1093/nar/gky523
-<br>
-Diao, Y., Hinson, K., Kaplan, R. et al. The effects of density on the topological structure of the mitochondrial DNA from trypanosomes. J. Math. Biol. 64, 1087–1108 (2012). https://doi.org/10.1007/s00285-011-0438-0
-<br>
+  
+<a href="https://doi.org/10.1093/nar/gky523">  Lucia Coronel, Antonio Suma, Cristian Micheletti, <i>  Dynamics of supercoiled DNA with complex knots: large-scale rearrangements and persistent multi-strand interlocking,</i> Nucleic Acids Research, Volume 46, Issue 15, 6 September 2018, Pages 7533–7541, https://doi.org/10.1093/nar/gky523 </a>
+
+
+<a href="https://doi.org/10.1007/s00285-011-0438-0"> Diao, Y., Hinson, K., Kaplan, R. et al. <i>  The effects of density on the topological structure of the mitochondrial DNA from trypanosomes. </i>  J. Math. Biol. 64, 1087–1108 (2012). https://doi.org/10.1007/s00285-011-0438-0 </a>
+
+
+
 <b>Notes</b> This text is based on the radio interviews aired on July 31, 2018. It has been translated and expanded for clarity and completeness.
 </p>
 
