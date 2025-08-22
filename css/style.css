@@ -290,7 +290,7 @@ main {
 /* Image */
 .page-image {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 600px;
   margin: 0 auto 20px auto;
   border-radius: 8px;
