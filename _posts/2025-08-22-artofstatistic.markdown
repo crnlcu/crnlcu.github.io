@@ -8,11 +8,11 @@ categories: books
 description: "Book recommendation"
 ---
 
-The Art of Satistics was firstly recommended to me by Matteo B. when I visited him in Boston, last May. So, 
+The Art of Satistics was firstly recommended to me by my friend Matteo B. when I visited him in Boston, last May. So, 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
 <img src="{{ site.baseurl }}/images/artofstat.jpeg"  width="100" height=auto class=center>
-
+ <figcaption>The cover</figcaption>
 <br>
 
 <h4> The Author </h4>
@@ -38,8 +38,10 @@ and data interpretations, which are instead taken as facts. Spiegelhalter stress
 statistical model, model error, etc., in a simple and approachable way that can be beneficial for everyone, with 
 or without a scientific background. 
 <br>
-<h4> Chicken Pox and Name Statistics</h3>h4>
-<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  width="100" height=auto class=center>
+<h4> </h4>
+<img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  width="300" height=auto class=center>
+
+ <figcaption>1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 The book was first published in 2019, right before the COVID-19 pandemic. That pandemic has shown us how tricky data 
 interpretation and communication can be. 
@@ -48,7 +50,7 @@ So, go and read it!
 
 <h4> More Info </h4>
 I found some video of the autor presenting the same topics. Again, it’s easy to Google, but here’s a list: 
-
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_DhOMdcbjuU?si=XRlSgQNSH7eXmM5H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m05BStvg23U?si=rUkoUNFnm41w9E-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
