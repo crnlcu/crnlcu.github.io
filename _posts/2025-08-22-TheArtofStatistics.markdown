@@ -12,7 +12,7 @@ The Art of Statistics was first recommended to me by my friend Matteo B. when I 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
 <img src="{{ site.baseurl }}/images/artofstat.jpeg"  width="25%"  alt="book cover" class="page-image">
- <figcaption>The cover</figcaption>
+ <figcaption  style="text-align: center">The cover</figcaption>
 <br>
 
 <h4> The Author </h4>
@@ -37,7 +37,7 @@ The book was first published in 2019, right before the COVID-19 pandemic. That p
 
 <h4> </h4>
 <img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="25%" height=auto class="page-image">
- <figcaption> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
+ <figcaption  style="text-align: center;"> 1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
 <br>
 
 <h4> Things I liked </h4>
