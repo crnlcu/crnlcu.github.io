@@ -24,8 +24,9 @@ I came back from the trip and did what any millennial would do: I ordered myself
 
 <h4> The Book </h4>
 
-The introduction of this book immediately sets the tone: right after the heading “Why We Need Statistics” comes: 
-<i> “Harold Shipman was Britain’s most prolific convicted murderer.” </i> Ok, I see what you're doing here, I’m all in for it. 
+The introduction of this book immediately sets the tone: right after the heading “Why We Need Statistics” comes: <br>
+<i> “Harold Shipman was Britain’s most prolific convicted murderer.” </i> <br>
+Ok, I see what you're doing here, I’m all in for it. 
 
 Across fourteen chapters, Spiegelhalter covers various topics in statistics and the art of extracting information from data. 
 From the basics to more state-of-the-art topics, the book provides theoretical concepts made understandable through reasoning 
@@ -40,8 +41,8 @@ or without a scientific background.
 <br>
 <h4> </h4>
 <img src="https://imgs.xkcd.com/comics/chicken_pox_and_name_statistics.png"  alt="chicken_pox_and_name_statistics" width="300" height=auto class=center>
-
  <figcaption>1950. "Chicken Pox and Name Statistics" by xkcd </figcaption>
+<br>
 <br>
 The book was first published in 2019, right before the COVID-19 pandemic. That pandemic has shown us how tricky data 
 interpretation and communication can be. 
