@@ -8,7 +8,7 @@ categories: books
 description: "Book recommendation"
 ---
 
-The Art of Satistics was firstly recommended to me by my friend Matteo B. when I visited him in Boston, last May. So, 
+The Art of Statistics was first recommended to me by my friend Matteo B. when I visited him in Boston last May. So, 
 I came back from the trip and did what any millennial would do: I ordered myself a paperback copy with a cuter cover.
 
 <img src="{{ site.baseurl }}/images/artofstat.jpeg"  width=50 height=auto alt="book cover" class="page-image">
