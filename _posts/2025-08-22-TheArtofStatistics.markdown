@@ -21,7 +21,7 @@ I came back from the trip and did what any millennial would do: I ordered myself
  He’s also known for his effort in public outreach via his non-technical books. He may be into 
  true crime ‘cause of his collaboration on the paper on the many murders of physician Harold Shipman. 
  Lastly, he’s into Bayesian stuff, honestly, such a green flag! Anyway, here's his <a href="https://www.dpmms.cam.ac.uk/~ds28/"><i><u>website</u></i></a>, and professor
- his <a href="https://www.dpmms.cam.ac.uk/person/ds28"> <i><u>one</u></i></a>. For anything else, Google’s got your back, I’m not linking the wiki page.
+<a href="https://www.dpmms.cam.ac.uk/person/ds28"> <i><u>one</u></i></a>. For anything else, Google’s got your back, I’m not linking the wiki page.
 
 <h4> The Book </h4>
 
@@ -44,18 +44,19 @@ The book was first published in 2019, right before the COVID-19 pandemic. That p
 
 It’s a great book! Full of trivia you can casually drop into your next social dinner: 
 <ul> 
-who was the luckiest passenger on the Titanic? <br>
-is screening for ovarian cancer is beneficial? <br>
- is prayer effective?<br>
- how popular has my name been over time?<br>
- how many sexual partners have people in Britain really had?<br>
+- Who was the luckiest passenger on the Titanic? <br>
+- Is screening for ovarian cancer beneficial? <br>
+- Is prayer effective?<br>
+- How popular has my name been over time?<br>
+- How many sexual partners have people in Britain really had?<br>
 </ul>
 Also, some quotes:
 
 <blockquote class="ludwig">
- The British statistician George Box has become famous for his brief but invaluable aphorism: ‘All models are wrong, some are useful.’ This pithy statement was based on a lifetime spent bringing statistical expertise to industrial processes, which led Box to appreciate both the power of models, but also the danger of actually starting to believe in them too much.</blockquote>
+The British statistician George Box has become famous for his brief but invaluable aphorism: ‘All models are wrong, some are useful.’ This pithy statement was based on a lifetime spent bringing statistical expertise to industrial processes, which led Box to appreciate both the power of models, but also the danger of actually starting to believe in them too much.</blockquote>
 
-<blockquote class="ludwig"> Bayes' legacy is the fundamental insight that the data does not speak for itself – our external knowledge, and even our judgement, has a central role.
+<blockquote class="ludwig"> 
+Bayes' legacy is the fundamental insight that the data does not speak for itself – our external knowledge, and even our judgement, has a central role.
 </blockquote>
 <h4> More Info </h4>
 I found some videos of the author presenting the same topics, here’s a list: 
