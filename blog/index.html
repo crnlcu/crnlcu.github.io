@@ -3,8 +3,6 @@ layout: default
 title: "Gating I Blog"
 tags: [research, biophysics, biopolymers, moleculardynamics, MD, MC, inhibitor, bk channel]
 ---
-
-
 <div class="post-list">
   {% for post in site.posts %}
     <div class="post-card">
@@ -16,3 +14,59 @@ tags: [research, biophysics, biopolymers, moleculardynamics, MD, MC, inhibitor, 
     </div>
   {% endfor %}
 </div>
+
+<style>
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.post-card {
+  background: #e0f7fa; /* soft sea blue */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: 'Comic Neue', cursive;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.post-card h2 a {
+  color: #00bcd4; /* brighter aqua blue */
+  text-decoration: none;
+}
+
+.post-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #007c91; /* deeper sea blue */
+  margin-bottom: 10px;
+}
+
+.post-description {
+  color: #004d54; /* slightly darker for readability */
+  line-height: 1.5;
+}
+</style>
+<!--
+
+<div class="post-list">
+  {% for post in site.posts %}
+    <div class="post-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div> -->
