@@ -2,146 +2,211 @@
 title: Background and Education
 layout: default
 ---
+
 <style>
-  .feature-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  max-width: 700px;
-}
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
 
-.feature-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 12px;
-  font-size: 1rem;
-  color: #333;
-}
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
 
-.feature-list i {
-  color: #4a90e2; /* accent color */
-  font-size: 1.2rem;
-  margin-right: 10px;
-  margin-top: 3px;
-  flex-shrink: 0;
-}
+  h1, h2, h3 {
+    /*font-family: 'Merriweather', serif;*/
+    font-weight: 600;
+    color: #222;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
-.feature-list b {
-  margin-right: 4px;
-}
+  section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
 
-.feature-list a {
-  color: #4a90e2;
-  text-decoration: none;
-}
+  section:nth-child(even) {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 2.5rem;
+  }
 
-.feature-list a:hover {
-  text-decoration: underline;
-}
+  p {
+    margin-bottom: 1rem;
+  }
 
+  a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Resume Button */
+  .button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .button:hover {
+    background: #357ab8;
+  }
+
+  /* Image Gallery */
+  .image-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+  }
+  .image-gallery img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .image-gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Timeline for Education */
+  .timeline {
+    border-left: 3px solid #4a90e2;
+    padding-left: 1rem;
+    margin: 2rem 0;
+  }
+  .timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: #4a90e2;
+    border-radius: 50%;
+  }
+  .timeline-item h3 {
+    margin: 0.2rem 0;
+  }
 </style>
+
 <main>
-<section id="one">
-  <h1 >About me </h1>  
-  <p>
-    Hey, I'm Lucia and I'm currently navigating the labyrinth of academia as a postdoc in the <a href="https://carnevalelab.org/" > Lab of Professor Vincenzo Carnevale  </a>  
-    at the Institute for Computational Molecular Science (ICMS) at Temple University. For those who like their facts straight up, 
-    <a href="/resume/Resume_Coronel_computational.pdf" download> here's my <b>resume</b></a>, my rollercoaster journey through 
-    the scientific wonderland.
-  </p>
-</section>
+  <!-- One -->
+  <section id="one">
+    <h1>About Me</h1>
+    <p>
+      Hey, I'm Lucia and I'm currently navigating the labyrinth of academia as a postdoc in the 
+      <a href="https://carnevalelab.org/">Lab of Professor Vincenzo Carnevale</a>  
+      at the Institute for Computational Molecular Science (ICMS) at Temple University.
+    </p>
+    <p>
+      For those who like their facts straight up, 
+      here’s my <a href="/resume/Resume_Coronel_computational.pdf" download><b>resume</b></a>, 
+      my rollercoaster journey through the scientific wonderland.
+    </p>
+    <a href="/resume/Resume_Coronel_computational.pdf" download class="button">Download Resume</a>
+  </section>
 
+  <!-- Two -->
+  <section id="two">
+    <h2>Things I Can Do</h2>
+    <em>The magic I bring to the table</em>
+    <p>
+      I’m comfortable working in <b>C++</b>, <b>Python</b>, and even <b>Bash</b> scripting. 
+      Somewhere along the way, in the eternal “editor wars,” I ended up with Vim. I learned coding throughout university and research projects, 
+      experimenting with different tools, from ROOT to LAMMPS and GROMACS, driven by curiosity and a desire to solve real problems. 
+    </p>
+    <p>
+      Over more than a decade, I've been working with data, identifying patterns, extracting insights, and communicating findings effectively. 
+      My strong background in mathematics and physics provides a solid foundation, shaping my analytical thinking and structured approach to problem-solving.
+    </p>
+    <p>
+      I thrive in multicultural environments where collaboration feels natural (and where sharing food is part of the fun). 
+      I enjoy creating visualizations that make data easier to understand, connecting people and ideas across three languages:
+      <b>English</b>, <b>Italian</b>, and <b>Spanish</b>. 
+    </p>
+    <p>
+      Outside of work, I love bringing people together, tinkering with crafts just for fun, and sometimes flipping my perspective—literally—because life is better when you go upside down.
+    </p>
+  </section>
 
-<!-- Two -->
-<section id="two">
-  <h2>Things I Can Do </h2>
-  <em>  the magic I bring to the table</em>
-  <p>
-    I’m comfortable working in <b>C++</b>, <b>Python</b>, and even <b>bash</b> scripting. Somewhere along the way, 
-    in the eternal “editor wars,” I ended up with Vim. I learned coding throughout university and research projects, 
-    experimenting with different tools, from ROOT to LAMMPS and GROMACS, driven by curiosity and a desire to solve real problems. 
-    Over more than a decade, I've been working with data, identifing patterns, extracting insights and communicating findings effectively. 
-    My strong background in mathematics and physics provides a solid foundation, shaping my analytical thinking and structured approach to problem-solving.
-    I thrive in multicultural environments where collaboration feels natural (and where sharing food is part of the fun). 
-    I enjoy creating visualizations that make data easier to understand, connecting people and ideas across three languages:
-    <b>English</b>, <b>Italian</b, and <b>Spanish</b>. 
-    Outside of work, I love bringing people together, tinkering with crafts just for fun, and sometimes flipping my perspective—literally—because life is better when you go upside down.
-    So, there you have it—a concoction of tech prowess, linguistic flair, social finesse, and a dash of whimsy. Let's make things happen!
-  </p>
-</section>
+  <!-- Three -->
+  <section id="three">
+    <h2>Where I Am Now</h2>
+    <p>
+      Right here in the heart of the action – <b>Philadelphia</b>, PA, baby!  
+      The City of Brotherly Love, where the coordinates are roughly 40° 0′ 34″ N and 75° 8′ 0″ W. Yeah, that's the spot!
+    </p>
+    <p>
+      Picture this: biking around several Ben Franklin-related landmarks (a bridge, a museum, a parkway), 
+      two rivers, and various parks. I've turned biking into a Ben Franklin adventure. 
+    </p>
+    <p>
+      And then there's the grand William Penn statue watching over the city, traffic lights doubling as sports climbing gear, and of course—cheesesteaks. 
+      It’s a <em>Philly thing</em>, and it’s glorious.
+    </p>
+    <div class="image-gallery">
+      <img src="/images/phillt1.JPG" alt="Philly 1">
+      <img src="/images/philly0.JPG" alt="Philly 2">
+      <img src="/images/philly2.JPG" alt="Philly 3">
+    </div>
+  </section>
 
-<!-- Three -->
-<section id="three">
-  <h3>Where I am now</h3>
-  <p>Right here in the heart of the action – <b> Philadelphia</b>, PA, baby!  <br \>
-  The City of Brotherly Love, where the coordinates are roughly 40° 0′ 34″ N and 75° 8′ 0″ W. Yeah, that's the spot!<br /><br />
-  Picture this: biking around several Ben Franklin related stuff (a bridge, a museum, a parkway), 
-  two rivers, and various parks. I've turned biking into a Ben Franklin adventure. Not only,
-  there's this grand William Penn statue, he keeps an eye on the city hustle.  <br /><br />
-  Now, here's the twist – biking under traffic lights that double as sport game climbers. 
-  You'll hear the cry, "It's a Philly thing!" Trust me; it's a thing, and it's glorious. <br />
-  Oh, did I mention Philadelphians are serious about their cheesesteaks? It's practically a local badge of honor.
-  And there's this bell, too – a big deal around here. Oh, and the word "Jawn."<br /><br />
-  <ul> 
-    <img src="/images/phillt1.JPG" alt="" class="responsive" width="30%" height="auto"  > 
-    <img src="/images/philly0.JPG" alt="" class="responsive" width="30%" height="auto"  >
-    <img src="/images/philly2.JPG" alt="" class="responsive" width="30%" height="auto"  >
-  </ul>
-  So, whether I'm chilling on the river or biking through, I'm soaking up the Philly essence.
-  It's more than a location; it's a feeling – <em> a Philly thing.</em>
-</p>
-</section>
+  <!-- Four -->
+  <section id="four">
+    <h2>Accomplishments & Education</h2>
+    <p>
+      My research has focused on the <b>structure</b> and <b>dynamics</b> of biopolymers such as DNA, RNA, and chromatin filaments, 
+      with particular emphasis on knotting problems. Over time, I expanded into protein systems (e.g. ion channels) and metamaterials (oxDNA).
+    </p>
 
-<!-- Four -->
-<section id="four">
-  <h2>A Few Accomplishments & my Edu Background </h2>
-  <p> The overarching topic of my research activity has been the <b>structure</b> and the <b>dynamic</b> of biopolymers such as DNA, RNA, and chromatin filaments, 
-         with particular emphasis on knotting problems related to them.<br \>
-         In my last year of Ph.D I moved to a more detailed coarse-grained model to tackle the role on the role of secondary and tertiary structure on the dynamics of biopolymers. 
-         In particular, looking at the mechanism that controls the response of the system. <br \>
-          As I moved forward in my academic path I focused on  <b>protein</b> systems  (e.g.ion channels) and <b>metamaterials</b> (oxDNA). 
-          <br \>
-  <h3>Ph.D in Physics and Chemistry of Biological Systems</h3>
-  Nov 2015 - Oct 2019  Trieste Italy <br>
-  International School for Advanced Studies (<a href="https://sissa.it"> SISSA</a>) <br \>
-     <ul> 
-  <img src="/images/image.png" alt="Trieste" class="responsive" width="40%" height="auto" >
- <img src="/images/sissa.jpg" alt="SISSA" class="responsive" width="58%" height="auto"  >
-     </ul>ul> 
-  <br>
-  <strong>Thesis:</strong> <em> <a href="https://iris.sissa.it/handle/20.500.11767/103679"> Bending rigidity, 
-  supercoiling and knotting of ring polymers: models and simulations </a></em> 
-                 <br \>
-  During my Ph.D I attended courses on Statistical Mechanics, Polymer Physics, 
-  Molecular Dynamics Simulations and Advanced Sampling Techniques thatbuild my background knowledge in 
-  Biophysics and Statistical Mechanics, as well as my expertise in MD and MC simulations. <br \>
-  <i>I defended my PhD thesis in October 2019.</i>
-    <br> 
-                        
-  Four intense years, from atoms simulations to the poetry of topological entanglement, it wasn't just a degree; 
-  it was a journey of curiosity, persistence, and a relentless pursuit of understanding the beautiful complexity 
-  of our biological world. Something that has facinated physicist since the very beginning. To the exceptional 
-  With mentors and peers who made this academic odyssey (Did I mention that the cluster's name was Ulysses?) truly unforgettable. 
-  <br>
-  <h3> M.Sc in Physics of Complex Systems </h3>   
-  Sept 2013 - Oct 2015, Torino, Italy<br \>
-  Universita' degli Studi di Torino. <br \> 
-  <a href="#" class="image"><img src="/images/torino.jpg" alt="Torino" class="responsive" width="60%" height="auto" ></a>   
-   <br \> 
-  <strong>Thesis:</strong> <em> Knotting in semi-flexible ring polymers </em> <br \>
-  After getting my Bachelor degree in Physics, I studied Physics of Complex Systems during which 
-  I had the opportunity to tackle interdisciplinary problems emerging in an advanced scientific context, 
-  system biology, neural network, emerging collective behaviours, basics of epidiemology and biophysics. 
-  I graduated with a master thesis on the knotting probability of ring polymers.  
-  <br>
-  <h3> B.Sc in Physics  </h3>  
-  Sept 2010 - Jul 2013,  Torino, Italy. 
-  Universita' degli Studi di Torino  <br \>
-  <strong>Thesis:</strong> <em> Measurement of the crosstalk in a multiplex photomultiplier for muon detection in the Auger/AMIGA experiment </em> <br \>
-  
-  </p>  
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Ph.D in Physics and Chemistry of Biological Systems</h3>
+        <p><strong>Nov 2015 – Oct 2019</strong>, SISSA – Trieste, Italy</p>
+        <p>
+          Thesis: <em>
+          <a href="https://iris.sissa.it/handle/20.500.11767/103679">
+            Bending rigidity, supercoiling and knotting of ring polymers: models and simulations
+          </a></em>
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>M.Sc in Physics of Complex Systems</h3>
+        <p><strong>Sept 2013 – Oct 2015</strong>, Università degli Studi di Torino</p>
+        <p>Thesis: <em>Knotting in semi-flexible ring polymers</em></p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>B.Sc in Physics</h3>
+        <p><strong>Sept 2010 – Jul 2013</strong>, Università degli Studi di Torino</p>
+        <p>Thesis: <em>Measurement of the crosstalk in a multiplex photomultiplier for muon detection in the Auger/AMIGA experiment</em></p>
+      </div>
+    </div>
+  </section>
+</main>
+
          
 </section>
 </main>
