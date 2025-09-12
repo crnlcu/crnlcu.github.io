@@ -21,9 +21,92 @@ tags: [research, biophysics, biopolymers, moleculardynamics, MD,hydrophobic,gati
     transform: scale(1.05); /* zoom slightly on hover */
     cursor: pointer; /* optional: show pointer */
 }
+<!-- POP UP -->
+    <style>
+    /* Popup backdrop */
+    #popupOverlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+    }
 
+    /* Popup box */
+    #mobilePopup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.3);
+      text-align: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+    }
+
+    #mobilePopup h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    #mobilePopup p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    #mobilePopup button {
+      background: #007bff;
+      border: none;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    #mobilePopup button:hover {
+      background: #0056b3;
+    }
+
+    /* Show popup only on small screens */
+    @media (max-width: 768px) {
+      #popupOverlay, #mobilePopup {
+        display: block;
+      }
+    }
   </style>
 
+<!-- Popup overlay + content -->
+  <div id="popupOverlay"></div>
+  <div id="mobilePopup">
+    <h3>Best Viewed on Desktop</h3>
+    <p>
+      This website is designed for desktop and may not perform well on mobile.<br>
+      For a better experience, try viewing in <strong>landscape mode</strong>.
+    </p>
+    <button onclick="closePopup()">Got it</button>
+  </div>
+
+  <script>
+    function closePopup() {
+      document.getElementById("mobilePopup").style.display = "none";
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+
+    // Ensure popup shows only on mobile immediately
+    window.addEventListener("load", function() {
+      if (window.innerWidth <= 768) {
+        document.getElementById("popupOverlay").style.display = "block";
+        document.getElementById("mobilePopup").style.display = "block";
+      }
+    });
+  </script>
  
 
     <!--
