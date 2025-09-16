@@ -2,6 +2,233 @@
 layout: default
 title: Research
 subtitle: Computational biophysics 
+tag: [research, biophysics, biopolymers, moleculardynamics, MD, MC, inhibitor, bk channel]
+---
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    flex: 0 0 250px;
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+    height: max-content;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  .sidebar h3 {
+    margin-top: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar li {
+    margin-bottom: 0.6rem;
+  }
+  .sidebar a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  .sidebar a:hover {
+    color: #357ab8;
+  }
+
+  /* Content */
+  .content {
+    flex: 1;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: #222;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  section:nth-child(even) {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 2.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Images */
+  .image-centered {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    max-width: 80%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Papers list */
+  .papers-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  .papers-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .papers-list li::before {
+    content: "•";
+    color: #4a90e2;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+
+  /* Conference list */
+  .conference-list {
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+  }
+  .conference-list li {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+    .sidebar {
+      position: relative;
+      top: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
+</style>
+
+<main>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <h3>On this page</h3>
+    <ul>
+      <li><a href="#two">Ion Channels</a></li>
+      <li><a href="#three">Self-Assembly</a></li>
+      <li><a href="#four">DNA Entanglement</a></li>
+      <li><a href="#five">oxDNA</a></li>
+      <li><a href="#six">Biopolymer Topology</a></li>
+      <li><a href="#papers">Papers</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Computational Biophysics</h1>
+
+    <section id="two">
+      <h2>Inhibition Mechanism of Ion Channels</h2>
+      <h4>Abstract</h4>
+      <p> ... (same as before) ... </p>
+    </section>
+
+    <section id="three">
+      <h2>Self-Assembly and Allostery</h2>
+      <p> ... (same as before) ... </p>
+    </section>
+
+    <section id="four">
+      <h2>DNA Entanglement</h2>
+      <img src="{{ site.baseurl }}/images/coverfig.jpeg" alt="DNA dynamics" class="image-centered">
+      <h3><a href="https://academic.oup.com/nar/issue/46/15">Dynamics of Supercoiled DNA</a></h3>
+      <p> ... (same as before) ... </p>
+    </section>
+
+    <section id="five">
+      <h2>oxDNA</h2>
+      <p> ... (same as before) ... </p>
+    </section>
+
+    <section id="six">
+      <h2>Entanglement and Topology of Biopolymers</h2>
+      <h3>It's KNOT.</h3>
+      <img src="{{ site.baseurl }}/images/trefoil.jpeg" alt="Trefoil knot" class="image-centered">
+      <p> ... (same as before) ... </p>
+    </section>
+
+    <section id="papers">
+      <h2>Papers</h2>
+      <p>See my full list on <a href="https://scholar.google.com/citations?user=nB3kxwQAAAAJ">Google Scholar</a>.</p>
+      <ul class="papers-list">
+        <li><a href="https://www.nature.com/articles/s41467-020-17508-7"><strong>Directional translocation resistance of Zika xrRNA</strong></a> (2020)</li>
+        <li><a href="https://doi.org/10.1093/nar/gkz491"><strong>Transcriptional supercoiling boosts topoisomerase II-mediated knotting</strong></a> (2019)</li>
+        <li><a href="https://doi.org/10.1016/j.reactfunctpolym.2018.11.008"><strong>Bimodality in the knotting probability of semiflexible rings</strong></a> (2019)</li>
+        <li><a href="https://doi.org/10.1093/nar/gky523"><strong>Dynamics of supercoiled DNA with complex knots</strong></a> (2018)</li>
+        <li><a href="https://pubs.rsc.org/en/content/articlelanding/2017/sm/c7sm00643h/unauth"><strong>Non-monotonic knotting probability of semiflexible rings</strong></a> (2017)</li>
+      </ul>
+    </section>
+
+    <section id="conferences">
+      <h2>Latest Conferences</h2>
+      <ul class="conference-list">
+        <li>Feb 2024 — 68th BPS Annual Meeting, Philadelphia, USA</li>
+        <li>Aug 2023 — Temple Postdoc Symposium, Philadelphia, USA</li>
+        <li>Apr 2023 — 17th Conference of Italian Research in the World, Philadelphia, USA</li>
+        <li>Feb 2023 — 67th BPS Annual Meeting, San Diego, USA</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+
+<!--
+layout: default
+title: Research
+subtitle: Computational biophysics 
 tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk channel]
 ---
 
@@ -20,7 +247,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
         
     
     </section>
-<!-- three-->
+<!-- three
     <section id="three">
      
             <h2>Self-assembly and allostery</h2> 
@@ -33,7 +260,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
         
           
     </section>
-<!-- three-->
+
     <section id="four">
  
             <h2>DNA Entanglement </h2> 
@@ -54,7 +281,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
           
     </section>
 
-<!-- four-->
+
     <section id="five">
 
             <h2>oxDNA</h2> 
@@ -76,7 +303,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
           
     </section>
 
-<!-- five-->
+
     <section id="six">
         <h2>Entanglement and topology of biopolymers</h2> 
              <h3>It's KNOT.
@@ -94,8 +321,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
              </p>
 
     </section>
-        
-  <!-- six-->
+
     <section id="six">
 
             <h2>Papers</h2> 
@@ -110,7 +336,7 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
                 </ul>
 
     </section>
-        <!-- seven-->
+
     <section id="seven">
 
             <h2>Latest Conferences </h2> 
@@ -124,4 +350,4 @@ tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk 
       
            </ul> 
   
-    </section>
+    </section> -->
