@@ -1,0 +1,401 @@
+---
+layout: default
+title: Research
+subtitle: Computational biophysics 
+tag: [research, biophysics, biopolymers, moleculardynamics, MD, MC, inhibitor, bk channel]
+---
+
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    flex: 0 0 250px;
+    position: sticky;
+    top: 2rem;
+    align-self: flex-start;
+    height: max-content;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  .sidebar h3 {
+    margin-top: 0;
+    /*font-family: 'Merriweather', serif;*/
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar li {
+    margin-bottom: 0.6rem;
+  }
+  .sidebar a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  .sidebar a:hover {
+    color: #357ab8;
+  }
+
+  /* Content */
+  .content {
+    flex: 1;
+  }
+
+  h1, h2, h3, h4 {
+    /*font-family: 'Merriweather', serif;*/
+    font-weight: 600;
+    color: #222;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  section:nth-child(even) {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 2.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Images */
+  .image-centered {
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    max-width: 80%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Papers list */
+  .papers-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  .papers-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    position: relative;
+  }
+  .papers-list li::before {
+    content: "•";
+    color: #4a90e2;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+
+  /* Conference list */
+  .conference-list {
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+  }
+  .conference-list li {
+    margin-bottom: 0.6rem;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+    .sidebar {
+      position: relative;
+      top: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
+</style>
+
+<main>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <h3>On this page</h3>
+    <ul>
+      <li><a href="#two">Ion Channels</a></li>
+      <li><a href="#three">Self-Assembly</a></li>
+      <li><a href="#four">DNA Entanglement</a></li>
+      <li><a href="#five">oxDNA</a></li>
+      <li><a href="#six">Biopolymer Topology</a></li>
+      <li><a href="#papers">Papers</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1 style="font-family:Ubuntu>Computational Biophysics</h1>
+
+    <section id="two">
+      <h2>Inhibition Mechanism of Ion Channels</h2>
+      <h4>Abstract</h4>
+      <p> The large-conductance, calcium-activated potassium (BK) channel lacks the classic intracellular bundle-crossing gate observed 
+                in most other ion channels of the 6TM family. This observation, initially inferred from closed-pore accessibility experiments 
+                and recently corroborated by a cryo-EM structure of the non-conductive state, raises naturally a puzzling question: how can gating occur 
+                in absence of steric hindrance? To answer this question, we combined electrophysiology and molecular simulations and investigated the kinetics 
+                BK inhibition by two pore-blockers. The crux of our strategy was to leverage the state-dependent affinity of the binders to probe the physical properties of the pore.
+                We thus combined kinetic modeling with a series of accurate free energy calculations to obtain a microscopic picture of the sequence of events 
+                taking place during the open-to-closed transition and giving rise to a nonconductive  </p>
+    </section>
+
+    <section id="three">
+      <h2>Self-Assembly and Allostery</h2>
+      <p> Inspired by bacterial chemosensory arrays, which are distinguished by high sensitivity and wide dynamic response range, 
+                we design a novel DNA-based metamaterial that self-assembles in presence of a ligand. Our design is based on flexible DNA-modules 
+                that undergo conformational restriction upon ligand binding.“Freezing” the internal degrees of freedom of a fraction of DNA-modules promotes 
+                formation of an extended array. We show that even in presence of exceedingly low concentrations of ligand, conformational restriction elicits an en masse, 
+                cooperative response of the material. Our results pave the way for a variety of nanotechnology applications and establish a novel paradigm for rationalizing 
+                the molecular mechanisms underlying reversible formation of biomolecular condensates and membrane-protein clusters. </p>
+    </section>
+
+    <section id="four">
+      <h2>DNA Entanglement</h2>
+      <img src="{{ site.baseurl }}/images/coverfig.jpeg" alt="DNA dynamics" class="image-centered">
+      <h3><a href="https://academic.oup.com/nar/issue/46/15">Dynamics of Supercoiled DNA</a></h3>
+      <p> Knots and supercoiling are both introduced in bacterial plasmids by catalytic processes involving DNA strand passages.
+                While the effects on plasmid organization has been extensively studied for knotting and supercoiling taken separately, 
+                much less is known about their concurrent action. Here, we use molecular dynamics simulations and oxDNA, an accurate mesoscopic 
+                DNA model, to study the kinetic and metric changes introduced by complex (five-crossing) knots and supercoiling in 2 kbp-long 
+                DNA rings. We find several unexpected results. First, the conformational ensemble is dominated by two distinct states, differing 
+                in branchedness and knot size. Secondly, fluctuations between these states are as fast as the metric relaxation of unknotted rings. 
+                In spite of this, certain boundaries of knotted and plectonemically-wound regions can persist over much longer timescales. 
+                These pinned regions involve multiple strands that are interlocked by the cooperative action of topological and supercoiling 
+                constraints. Their long-lived character may be relevant for the simplifying action of topoisomerases. </p>
+    </section>
+
+    <section id="five">
+      <h2>oxDNA</h2>
+      <p> OxDNA is a computer simulation software designed for modeling the structural and thermodynamic properties
+                of DNA, or more precisely, double-stranded DNA (dsDNA). It stands for "Oxford DNA" because it was developed 
+                at the University of Oxford. OxDNA is a coarse grained model and used to simulate the behavior of DNA molecules at the atomic level, 
+                taking into account the interactions between individual atoms and the chemical bonds that hold the DNA 
+                strands together. This software is particularly valuable for studying DNA's properties in various 
+                conditions, such as in different solvents or under the influence of external forces. 
+                The applications range from studying DNA structure to characterize hybrid system or develop nanotechnologies. 
+                My research used this powerful tool to investigate topological properties of DNA-rings with aim to gain insights in the mechanisms 
+                interplay between knotting and the acion of Topoisomerase. 
+                Furthermore, a specific and facinatin application of the OxDNA is the one of  DNA origami. DNA origami is a method 
+                for creating complex, nanoscale structures by folding a long single-stranded DNA molecule into a desired shape using short, 
+                complementary DNA strands as "staples." This technique was developed to design and build nanoscale objects and devices
+                for various applications, including nanoelectronics, drug delivery, and nanoscale robotics. </p>
+    </section>
+
+    <section id="six">
+      <h2>Entanglement and Topology of Biopolymers</h2>
+      <h3>It's KNOT.</h3>
+      <img src="{{ site.baseurl }}/images/trefoil.jpeg" alt="Trefoil knot" class="image-centered">
+      <p> Knot theory is a rich and fascinating field that has connections to various areas of mathematics and science. 
+                It has practical applications in real-world problems and is also a subject of 
+                artistic and recreational interest due to the intriguing complexity of knots and their study.
+               During my PhD, my research was focused on the characterization of knots in biopolymers, specifically DNA and RNA. 
+                Notably, I discovered that the probability of encountering knots in a semiflexible ring polymer exhibits a 
+                non-monotonic relationship with respect to its rigidity. Surprisingly, it is more probable to observe the 
+                presence of a knot in a polymer with non-zero rigidity, as opposed to one that is either fully flexible or 
+                entirely rigid. While the latter observation aligns with intuition (as the rigidity approaches infinity, 
+                the polymer essentially forms a rigid circle), the former finding came as an unexpected revelation. </p>
+    </section>
+
+    <section id="papers">
+      <h2>Papers</h2>
+      <p>See my full list on <a href="https://scholar.google.com/citations?user=nB3kxwQAAAAJ">Google Scholar</a>.</p>
+      <ul class="papers-list">
+      <span style="font-family:Fira Code">
+                <li > <strong> <a href="https://www.nature.com/articles/s41467-020-17508-7"> Directional translocation resistance of Zika xrRNA  </strong> (2020) A. Suma, L. Coronel, G. Bussi, C. Micheletti </li>
+                <li> <strong> <a href="https://doi.org/10.1093/nar/gkz491"> Transcriptional supercoiling boosts topoisomerase II-mediated knotting of intracellular DNA </a>  </strong> (2019) A. Valdés, L. Coronel, B. Martínez-García, J. Segura, S. Dyson, O. Díaz-Ingelmo, C. Micheletti, J. Roca </li>
+                <li> <strong> <a href="https://doi.org/10.1016/j.reactfunctpolym.2018.11.008"> Bimodality in the knotting probability of semiflexible rings suggested by mapping with self-avoiding polygons </a> </strong> (2019) E. Uehara, L. Coronel, C. Micheletti, T. Deguchi</li>
+                <li> <strong> <a href="https://doi.org/10.1093/nar/gky523"> Dynamics of supercoiled DNA with complex knots: large-scale rearrangements and persistent multi-strand interlocking </a> </strong> (2018) L. Coronel, A. Suma, C. Micheletti</li>
+                <li> <strong> <a href="https://pubs.rsc.org/en/content/articlelanding/2017/sm/c7sm00643h/unauth"> Non-monotonic knotting probability and knot length of semiflexible rings: the competing roles of entropy and bending energy</a>  </strong> (2017) L. Coronel, E. Orlandini, C. Micheletti</li>
+                </span>
+            </ul>
+    </section>
+
+    <section id="conferences">
+      <h2>Latest Conferences</h2>
+
+            <script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/npb8hpnvnr/0x0x3fb393x"></script>
+           <i class="fa-sharp fa-light fa-users-line"></i>
+        <ul > 
+               <li> Sept. 2025, Fifth DiSVA-MaSBiC Symposium - Ancona, IT</li>
+               <li> Feb. 2024, 68th BPS Annual meeting - Philadelphia, USA</li>
+               <li> Aug. 2023, Temple Postdoc Symposium  - Philadelphia, USA</li>
+               <li> Apr. 2023, 17th Conference of Italian Research in the world - Philadelphia, USA</li>
+               <li> Feb. 2023, 67th BPS Annual meeting - San Diego, USA </li>
+      
+           </ul> 
+    </section>
+  </div>
+</main>
+
+
+<!--
+layout: default
+title: Research
+subtitle: Computational biophysics 
+tag: [research,biophysics, biopolymers,moleculardynamics, MD, MC, inhibitor, bk channel]
+---
+
+<h1>Computational biophysics</h1>
+ <section id="two">
+        
+            <h2>Inhibition mechanism of ion channels</h2>
+            <h4> Abstract </h4>
+            <p> The large-conductance, calcium-activated potassium (BK) channel lacks the classic intracellular bundle-crossing gate observed 
+                in most other ion channels of the 6TM family. This observation, initially inferred from closed-pore accessibility experiments 
+                and recently corroborated by a cryo-EM structure of the non-conductive state, raises naturally a puzzling question: how can gating occur 
+                in absence of steric hindrance? To answer this question, we combined electrophysiology and molecular simulations and investigated the kinetics 
+                BK inhibition by two pore-blockers. The crux of our strategy was to leverage the state-dependent affinity of the binders to probe the physical properties of the pore.
+                We thus combined kinetic modeling with a series of accurate free energy calculations to obtain a microscopic picture of the sequence of events 
+                taking place during the open-to-closed transition and giving rise to a nonconductive ..</p>
+        
+    
+    </section>
+<!-- three
+    <section id="three">
+     
+            <h2>Self-assembly and allostery</h2> 
+            <p> Inspired by bacterial chemosensory arrays, which are distinguished by high sensitivity and wide dynamic response range, 
+                we design a novel DNA-based metamaterial that self-assembles in presence of a ligand. Our design is based on flexible DNA-modules 
+                that undergo conformational restriction upon ligand binding.“Freezing” the internal degrees of freedom of a fraction of DNA-modules promotes 
+                formation of an extended array. We show that even in presence of exceedingly low concentrations of ligand, conformational restriction elicits an en masse, 
+                cooperative response of the material. Our results pave the way for a variety of nanotechnology applications and establish a novel paradigm for rationalizing 
+                the molecular mechanisms underlying reversible formation of biomolecular condensates and membrane-protein clusters.</p>
+        
+          
+    </section>
+
+    <section id="four">
+ 
+            <h2>DNA Entanglement </h2> 
+            <img src="{{ site.baseurl }}/images/coverfig.jpeg" alt="31" width="80" > 
+            <br>
+            <h3> ><a href="https://academic.oup.com/nar/issue/46/15"> Dynamics of supercoiled DNA </a> </h3
+            
+            <p> Knots and supercoiling are both introduced in bacterial plasmids by catalytic processes involving DNA strand passages.
+                While the effects on plasmid organization has been extensively studied for knotting and supercoiling taken separately, 
+                much less is known about their concurrent action. Here, we use molecular dynamics simulations and oxDNA, an accurate mesoscopic 
+                DNA model, to study the kinetic and metric changes introduced by complex (five-crossing) knots and supercoiling in 2 kbp-long 
+                DNA rings. We find several unexpected results. First, the conformational ensemble is dominated by two distinct states, differing 
+                in branchedness and knot size. Secondly, fluctuations between these states are as fast as the metric relaxation of unknotted rings. 
+                In spite of this, certain boundaries of knotted and plectonemically-wound regions can persist over much longer timescales. 
+                These pinned regions involve multiple strands that are interlocked by the cooperative action of topological and supercoiling 
+                constraints. Their long-lived character may be relevant for the simplifying action of topoisomerases.</p>
+    
+          
+    </section>
+
+
+    <section id="five">
+
+            <h2>oxDNA</h2> 
+            <p> OxDNA is a computer simulation software designed for modeling the structural and thermodynamic properties
+                of DNA, or more precisely, double-stranded DNA (dsDNA). It stands for "Oxford DNA" because it was developed 
+                at the University of Oxford. OxDNA is a coarse grained model and used to simulate the behavior of DNA molecules at the atomic level, 
+                taking into account the interactions between individual atoms and the chemical bonds that hold the DNA 
+                strands together. This software is particularly valuable for studying DNA's properties in various 
+                conditions, such as in different solvents or under the influence of external forces. 
+                The applications range from studying DNA structure to characterize hybrid system or develop nanotechnologies. 
+                My research used this powerful tool to investigate topological properties of DNA-rings with aim to gain insights in the mechanisms 
+                interplay between knotting and the acion of Topoisomerase. 
+                Furthermore, a specific and facinatin application of the OxDNA is the one of  DNA origami. DNA origami is a method 
+                for creating complex, nanoscale structures by folding a long single-stranded DNA molecule into a desired shape using short, 
+                complementary DNA strands as "staples." This technique was developed to design and build nanoscale objects and devices
+                for various applications, including nanoelectronics, drug delivery, and nanoscale robotics.
+            </p>
+ 
+          
+    </section>
+
+
+    <section id="six">
+        <h2>Entanglement and topology of biopolymers</h2> 
+             <h3>It's KNOT.
+            </h3>
+             <img src="{{ site.baseurl }}/images/trefoil.jpeg" alt="31" width="80" >
+             <p>Knot theory is a rich and fascinating field that has connections to various areas of mathematics and science. 
+                It has practical applications in real-world problems and is also a subject of 
+                artistic and recreational interest due to the intriguing complexity of knots and their study.
+               During my PhD, my research was focused on the characterization of knots in biopolymers, specifically DNA and RNA. 
+                Notably, I discovered that the probability of encountering knots in a semiflexible ring polymer exhibits a 
+                non-monotonic relationship with respect to its rigidity. Surprisingly, it is more probable to observe the 
+                presence of a knot in a polymer with non-zero rigidity, as opposed to one that is either fully flexible or 
+                entirely rigid. While the latter observation aligns with intuition (as the rigidity approaches infinity, 
+                the polymer essentially forms a rigid circle), the former finding came as an unexpected revelation.
+             </p>
+
+    </section>
+
+    <section id="six">
+
+            <h2>Papers</h2> 
+            <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=nB3kxwQAAAAJ"> Google Scholar <br \>
+            <ul >  <span style="font-size: 0.95em">
+                <li> <strong> <a href="https://doi.org/10.1038/s41467-025-61638-9"> Lipid-mediated hydrophobic gating in the BK potassium channel. </a> </strong> (2025) Coronel, L., Di Muccio, G., Rothberg, B.S. et al. 
+                <li > <strong> <a href="https://www.nature.com/articles/s41467-020-17508-7"> Directional translocation resistance of Zika xrRNA </a>  </strong> (2020) A. Suma, L. Coronel, G. Bussi, C. Micheletti </li>
+                <li> <strong> <a href="https://doi.org/10.1093/nar/gkz491"> Transcriptional supercoiling boosts topoisomerase II-mediated knotting of intracellular DNA </a>  </strong> (2019) A. Valdés, L. Coronel, B. Martínez-García, J. Segura, S. Dyson, O. Díaz-Ingelmo, C. Micheletti, J. Roca </li>
+                <li> <strong> <a href="https://doi.org/10.1016/j.reactfunctpolym.2018.11.008"> Bimodality in the knotting probability of semiflexible rings suggested by mapping with self-avoiding polygons </a> </strong> (2019) E. Uehara, L. Coronel, C. Micheletti, T. Deguchi</li>
+                <li> <strong> <a href="https://doi.org/10.1093/nar/gky523"> Dynamics of supercoiled DNA with complex knots: large-scale rearrangements and persistent multi-strand interlocking </a> </strong> (2018) L. Coronel, A. Suma, C. Micheletti</li>
+                <li> <strong> <a href="https://pubs.rsc.org/en/content/articlelanding/2017/sm/c7sm00643h/unauth"> Non-monotonic knotting probability and knot length of semiflexible rings: the competing roles of entropy and bending energy</a>  </strong> (2017) L. Coronel, E. Orlandini, C. Micheletti</li>
+                </span>
+                </ul>
+
+    </section>
+
+    <section id="seven">
+
+            <h2>Latest Conferences </h2> 
+            <script type="text/javascript" src="https://sessionize.com/api/speaker/sessions/npb8hpnvnr/0x0x3fb393x"></script>
+           <i class="fa-sharp fa-light fa-users-line"></i>
+        <ul > 
+               <li> Sept. 2025, Fifth DiSVA-MaSBiC Symposium - Ancona, IT</li>
+               <li> Feb. 2024, 68th BPS Annual meeting - Philadelphia, USA</li>
+               <li> Aug. 2023, Temple Postdoc Symposium  - Philadelphia, USA</li>
+               <li> Apr. 2023, 17th Conference of Italian Research in the world - Philadelphia, USA</li>
+               <li> Feb. 2023, 67th BPS Annual meeting - San Diego, USA </li>
+      
+           </ul> 
+  
+    </section> -->
