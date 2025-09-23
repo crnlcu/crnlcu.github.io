@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}  Lucia Coronel</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+ 
+</head>
+<body>
+
+  <!-- Include Top Navigation Bar -->
+  {% include header.html %}
+
+  <!-- Main Content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} Lucia Coronel | All rights reserved</p>
+  </footer>
+
+ 
+
+</body>
+</html>
+

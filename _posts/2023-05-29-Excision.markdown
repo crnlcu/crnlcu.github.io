@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Excision"
+date:   2023-05-29 14:37:44
+categories: update
+---
+<img src="{{ site.baseurl }}/images/excision.jpg">
+
+Few weeks ago I had a biopsy of a mole on my toe, it was the 4th one on the same mole, so I was quite annoyed. The doctors decided to take off a huge portion of my toe, definitely bigger than the mole itself. Few days ago the results came back saying that everything is normal. Well, among the other stuff the report said, there was this sentence: <br />
+<center> Lucia Coronel tolerated the excision well. </center>
+<br />
+The word "resilience" is now a cute newbie. I tolerate excisions well. #stacce <br />
+Maybe this was not such a fun anecdote after all. I hope you tolerate it well.
+
