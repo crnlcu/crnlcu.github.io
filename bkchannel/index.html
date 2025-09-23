@@ -1,0 +1,293 @@
+---
+layout: default
+title: "Lipid-mediated hydrophobic gating in the BK channel"
+tags: [research, biophysics, biopolymers, moleculardynamics, MD,hydrophobic,gating,lipids, bk channel]
+---
+<style>
+    /* General styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: black;
+    }
+
+    .hover-image {
+    transition: transform 0.3s ease; /* smooth animation */
+}
+
+.hover-image:hover {
+    transform: scale(1.05); /* zoom slightly on hover */
+    cursor: pointer; /* optional: show pointer */
+}
+<!-- POP UP -->
+    <style>
+    /* Popup backdrop */
+    #popupOverlay {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+    }
+
+    /* Popup box */
+    #mobilePopup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.3);
+      text-align: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+    }
+
+    #mobilePopup h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    #mobilePopup p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    #mobilePopup button {
+      background: #007bff;
+      border: none;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    #mobilePopup button:hover {
+      background: #0056b3;
+    }
+
+    /* Show popup only on small screens */
+    @media (max-width: 768px) {
+      #popupOverlay, #mobilePopup {
+        display: block;
+      }
+    }
+  </style>
+
+<!-- Popup overlay + content -->
+  <div id="popupOverlay"></div>
+  <div id="mobilePopup">
+    <h3>Best Viewed on Desktop</h3>
+    <p>
+      This website is designed for desktop and may not perform well on mobile.<br>
+      For a better experience, try viewing in <strong>landscape mode</strong>.
+    </p>
+    <button onclick="closePopup()">Got it</button>
+  </div>
+
+  <script>
+    function closePopup() {
+      document.getElementById("mobilePopup").style.display = "none";
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+
+    // Ensure popup shows only on mobile immediately
+    window.addEventListener("load", function() {
+      if (window.innerWidth <= 768) {
+        document.getElementById("popupOverlay").style.display = "block";
+        document.getElementById("mobilePopup").style.display = "block";
+      }
+    });
+  </script>
+ 
+
+    <!--
+    <video autoplay muted loop> <source src="https://crnlcu.github.io/bkchannel/media/videoBW.mp4" type="video/mp4"> </video> 
+Video Background -->
+
+<section style="text-align:center; padding: 1em;">
+  <img src="https://crnlcu.github.io/bkchannel/media/membrane_lipids.jpeg" class="hover-image"
+       alt="membrane" 
+       style="width:100%; height:auto; max-width:1500px;">
+  
+  <h1>Lipid-mediated hydrophobic gating in the BK channel</h1>
+  
+  <p>
+    Lucia Coronel, Giovanni Di Muccio, Brad S. Rothberg, 
+    Alberto Giacomello & Vincenzo Carnevale
+  </p>
+    <p><a href="https://rdcu.be/eFfrR" target="_blank">Nat Commun 16, 7354 (2025) </a></p>
+</p>
+</section>
+
+
+  <!-- Section 1 -->
+  <div  style="display: flex; align-items: flex-start; gap: 2rem; padding: 1em;">
+  
+  <!-- Image on the left -->
+  <div style="flex: 1; max-width: 55%;">
+    <img src="https://crnlcu.github.io/bkchannel/media/fig1old.png" class="hover-image" 
+         alt="Image 1" 
+         style="width:100%; height:auto; border-radius: 8px;">
+  </div>
+
+  <!-- Text on the right -->
+  <div style="flex: 1; max-width: 43%;margin-bottom: 20px">
+    
+    <p> BK channels are large-conductance channels that regulate K⁺ efflux in response to cytosolic Ca²⁺ 
+        and membrane depolarization, playing key roles in processes like hearing, neurosecretion, 
+        and smooth muscle contraction. Each channel is a <b>tetramer</b>, with subunits containing 
+        a <strong style="color: red;"> voltage-sensing domain</strong> (VSD:S1–S4 helices), 
+        <strong style="color: green;">pore-gate domain</strong> (PGD: S5–S6 helices), and
+            <strong style="color: dark-yellow;">cytosolic tail domain</strong> (CTD). 
+        The PGD forms the ion-conducting pore and selectivity filter, while the VSD  
+        detects depolarization, and the CTD binds Ca²⁺. The channel opening can be triggered independently 
+        by either Ca²⁺ binding or voltage sensing
+      In the inset, the PGD is shown (only two subunits shown for clarity)
+      along with the K+ ions (gray spheres) and waters occupying the Selectivity-Filter (SF). <br><br>
+
+      The  <strong style="color: purple;">deep pore volume</strong> (DPV) is defined as follows: a cylindrical volume 
+        with a radius of 0.7 nm and 
+        axis aligned to the SF axis of symmetry. The cylinder’s height is 0.5 nm with its topmost circular face 
+        located 1.2 nm below the SF center of mass and the other in proximity of the kink of S6.
+    </p>
+  </div>
+</div>
+
+
+  <!-- Section 2 -->
+   <div  style="align-items: flex-start;margin-bottom: 20px" >
+    <img src="https://crnlcu.github.io/bkchannel/media/side_w_yellow.jpeg" alt="" style="width:100%;height:auto;" class="hover-image">
+    <p style="text-align:center;"> <i>Comparison of three wild-type PGD structures: <strong style="color: green;">Ca²⁺-free</strong>, 
+        <strong style="color: #FFC107;">Ca²⁺-int</strong>, and 
+        <strong style="color: red;">Ca²⁺-bound</strong>. Notice how fenestrations are 
+        present in the <strong style="color: green;">Ca²⁺-free</strong> structure, arising from the kinked conformation of S6.</i>  </p>
+    <img src="https://crnlcu.github.io/bkchannel/media/bottom_w_yellow.jpeg" alt=""  class="hover-image"style="width:100%;height:auto;">
+       <br>
+       
+   </div>
+
+  <!-- Section 3-->
+ 
+<div id="section1" style="display: flex; align-items: flex-start; gap: 2rem; padding: 1em;">
+    <div style="flex: 1; max-width: 45%;">
+        <h2> Width of the pore lumen</h2> 
+        <p> We characterized the channel by computing the pore radius along the axis of symmetry. 
+           The conductive (<strong style="color: red;">Ca²⁺-bound</strong>)
+           and non conductive (<strong style="color: green;">Ca²⁺-free</strong>) radii begin 
+           to branch out at 17 A below the center of mass of the selectivity filter,
+           and keep diverging up to the S6 knk, at z=-17 A, where where the difference between the two pore radii achieves a maximum.  
+           We refer to this region as the deep pore volume (DPV). Here, the <strong style="color: red;">Ca²⁺-bound</strong> radius is always larger than the Ca -free. 
+           On the other by <strong style="color: #FFC107;">Ca²⁺-int</strong> structure has a pore lumen radius that resembles the WT <strong style="color: red;">Ca²⁺-bound</strong> structure
+          Although the pore radii of WT <strong style="color: red;">Ca²⁺-bound</strong>, WT Ca2+ −int, 
+           and WT <strong style="color: green;">Ca²⁺-free</strong> BK channels
+           are all seemingly large enough to accommodate water and ions, inspection of our molecular simulation trajectories reveals qualitatively different behaviors. 
+         </p>
+    </div>
+    <div style="flex: 1; max-width: 55%;margin-bottom: 20px">
+        <img src="https://crnlcu.github.io/bkchannel/media/radius_conf_start.jpeg" class="hover-image" alt=""  style="width:65%; height:auto;">
+   
+   </div>
+    
+</div>
+<div  style="position: relative; text-align: center; width: 100%; overflow: hidden;margin-bottom: 20px">
+    <img src="https://crnlcu.github.io/bkchannel/media/comparison.jpeg" class="hover-image" alt=""  style="width:80%; height:auto;">
+   
+</div>
+<div  style="position: relative; text-align: center; width: 100%; overflow: hidden;margin-bottom: 20px">
+    <p>During the simulations, the DPV of the WT <strong style="color: green;">Ca²⁺-free</strong> state, solely, 
+        transitions from a wet to a dewetted state. Interestingly, we 
+        observe that dewetting occurs specifically when methyl groups from annular lipid tails penetrate the DPV through 
+        fenestrations, partially occupying the pore lumen. To quantify these events, we tracked the number of lipid 
+        carbon atoms and water molecules present within the DPV over time.</p>
+    <img src="https://crnlcu.github.io/bkchannel/media/plot_conteggi_2.jpeg" class="hover-image" alt=""  style="width:80%; height:auto;">
+   
+</div>
+
+<div  style="position: relative; text-align: center; width: 100%; overflow: hidden;margin-bottom: 20px">
+    <p> WT <strong style="color: green;">Ca²⁺-free</strong> state vs WT <strong style="color: red;">Ca²⁺-bound</strong> 
+    </p>
+    <img src="https://crnlcu.github.io/bkchannel/media/comparison2.jpeg" class="hover-image" alt=""  style="width:80%; height:auto;">
+   
+  </div>
+
+
+<div  style="display: flex; align-items: flex-start; gap: 2rem; padding: 1em;">
+
+<div style="flex: 1; max-width: 40%;"> <h2> Pore hydration and lipid penetration</h2>
+<ul>
+<li>Anticorralation
+<li>Helices Angles distributions
+<li>Steric hindrance by lipid carbon atoms occupying the DPV
+</ul>
+
+</div>
+<div style="flex: 1; max-width: 58%;">
+    <img src="https://crnlcu.github.io/bkchannel/media/autocorr_helices_radius.jpeg" class="hover-image" alt=""  style="width:100%; height:auto;">
+</div>
+</div>
+
+<div  style="position: relative; text-align: center; width: 100%; overflow: hidden;margin-bottom: 20px">
+    <h2>Metadynamics simulations</h2>
+    <img src="https://crnlcu.github.io/bkchannel/media/FIG3.png" class="hover-image" alt=""  style="width:60%; height:auto;">
+    <img src="https://crnlcu.github.io/bkchannel/media/FIG42.jpeg" class="hover-image" alt=""  style="width:70%; height:auto;">
+</div>
+
+
+
+<div  style="position: relative; text-align: center; width: 100%; overflow: hidden;margin-bottom: 20px">
+    <h2>Mutations</h2>
+    <p>Two mutations were performed in the deep pore region: L312A and L312D, known experimentally to stabilize the conductive state.
+    Both mutations performed on the  WT <strong style="color: green;">Ca²⁺-free</strong> structure behave like Ca2+-bound state: showing 
+    comparable levels of hydrations and closed fenestrations. Once again dewetting in not observed in absence of lipids. 
+    </p>
+    <img src="https://crnlcu.github.io/bkchannel/media/FIG5.png" class="hover-image" alt=""  style="width:80%; height:auto;">
+   
+</div>
+
+
+ <div style="display: flex; align-items: flex-start; gap: 2rem; padding: 1em;">
+    <div style="flex: 1; max-width: 40%;">
+        <h2>Allosteric Coupling</h2>
+        <p>Differences between the  WT <strong style="color: green;">Ca²⁺-free</strong> and  WT <strong style="color: red;">Ca²⁺-bound</strong> state 
+        upon considering annular lipid interaction with S6 and the CTD. Upon Ca2+ binding there is a ∼9 Å movement of Lys392 outwards, affecting the chances
+        of lipid tail penetrations.  Finally, our simulations show that only the unsaturated tails 
+        were able to penetrate the fenestrations; in which the kink favours the penetration.
+        </p>
+    </div>
+    <div style="flex: 1; max-width: 50%;">
+        <img src="https://crnlcu.github.io/FIG82.png" class="hover-image" alt=""  style="width:90%; height:auto;">
+    </div>
+</div>
+
+
+
+ <h2> Gallery </h2>
+    
+   <!-- Section 7: Image -->
+<div style="max-width: 100%; box-sizing: border-box; padding: 0 10px; margin: auto;">
+    <img src="https://crnlcu.github.io/bkchannel/media/lip4_clo.png" 
+         alt="Image" 
+         style="width: 100%; max-width: 100%; height: auto; display: block; margin: auto;" class="hover-image">
+   
+</div>
+
+<!-- Section 7: Video Background -->
+<div id="section7" style=" text-align: center;position: relative; width: 100%; max-width: 100%; overflow: hidden; box-sizing: border-box; margin: auto;">
+    <p style="text-align:center;">MD simulations (up to 1000ns) of the WT <strong style="color: green;">Ca²⁺-free</strong> BK Channel, lipids penetrations. Shown PGD only.</p> 
+    <video autoplay muted loop style="width: 100%; max-width: 80%; height: auto; display: block; margin: auto;">
+        <source src="https://crnlcu.github.io/bkchannel/media/tra4.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+
+
