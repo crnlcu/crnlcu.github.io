@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Gating I Blog"
+tags: [research, biophysics, biopolymers, moleculardynamics, MD, MC, inhibitor, bk channel]
+---
+<div class="post-list">
+  {% for post in site.posts %}
+    <div class="post-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between cards */
+  justify-content: center; /* center the cards */
+  padding: 20px;
+}
+
+.post-card {
+  background: #e0f7fa; /* soft sea blue */
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px; /* fixed width for uniform cards */
+  box-sizing: border-box;
+}
+
+.post-card h2 a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #007c91;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  color: #004d54;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+</style>
+
+<!--
+
+<div class="post-list">
+  {% for post in site.posts %}
+    <div class="post-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div> -->
