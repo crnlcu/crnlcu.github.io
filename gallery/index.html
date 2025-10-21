@@ -3,25 +3,6 @@ layout: default
 ---
 
 <style>
-div.scroll-container {
-  background-color: #333;
-  overflow-x: auto; /* horizontal scroll only */
-  white-space: nowrap;
-  padding: 10px;
-}
-
-div.scroll-container img {
-  height:50vh;    /* fixed height for all images */
-  width: auto;      /* keep proportions */
-  padding: 10px;
-  object-fit: contain; /* keeps whole image visible */
-}
-
-@media (max-width: 768px) {
-  div.scroll-container img {
-    height: 40vh; /* smaller on mobile */
-  }
-}
 * {
             margin: 0;
             padding: 0;
@@ -53,13 +34,13 @@ div.scroll-container img {
             border-radius: 8px;
         }
         .gallery-item:hover {
-            transform: scale(1.05);
+            transform: scale(1.5);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 </style>
 
 <h2>Gallery</h2>
-<p>Cities & not</p>
+<h3>Cities & not</h3>
  <div class="gallery">
         <div class="gallery-item">
             <img src="{{ site.baseurl }}/images/philly0.JPG" alt="Image 1">
